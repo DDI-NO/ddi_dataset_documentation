@@ -1,0 +1,24 @@
+variables:
+  - name: baseline_date
+    definition: "Earliest available visit date for the subject across diagnosis records."
+    level: subject
+    domain: diag
+    depends_on:
+      - DATE
+    algorithm: "MIN(DATE) per subject"
+  - name: last_stag
+    definition: "Most recent clinical staging code for the subject."
+    level: subject
+    domain: diag
+    depends_on:
+      - STAG
+      - DATE
+    algorithm: "STAG from the latest DATE per subject"
+  - name: progression
+    definition: "Derived progression indicator based on baseline and last staging values."
+    level: subject
+    domain: diag
+    depends_on:
+      - STAG
+      - DATE
+    algorithm: "Compare baseline STAG to last STAG; set flag if stage increases"

@@ -1,0 +1,21 @@
+display_version: "dump"
+sidecar_roots:
+  - "../xnat-apgem-plugin/src/main/resources/schemas"
+
+experiments:
+  diag_DiagnosisData:
+    enabled: true
+    sidecar_path: "../xnat-apgem-plugin/src/main/resources/schemas/diag/display/diag_DiagnosisData_display.meta.yaml"
+    page_slug: "diag_diagnosis"
+    scope_md: "content/experiments/diag_DiagnosisData.md"
+  dem_ddiDemographicData:
+    enabled: true
+    sidecar_path: "../xnat-apgem-plugin/src/main/resources/schemas/dem/display/dem_ddiDemographicData_display.meta.yaml"
+    page_slug: "demographics"
+    scope_md: "content/experiments/dem_ddiDemographicData.md"
+
+flat_dataset:
+  include_experiments:
+    - "diag_DiagnosisData"
+    - "dem_ddiDemographicData"
+  computed_variables_spec: "config/computed.yaml"

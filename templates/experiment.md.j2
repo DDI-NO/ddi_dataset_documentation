@@ -1,0 +1,20 @@
+## Variables
+
+| ID | Label | Definition | Level | Domain | Type | Sensitivity |
+| --- | --- | --- | --- | --- | --- | --- |
+{% for v in variables %}| {{ v.table.id }} | {{ v.table.label }} | {{ v.table.definition }} | {{ v.table.level }} | {{ v.table.domain }} | {{ v.table.value_type }} | {{ v.table.sensitivity }} |
+{% endfor %}
+
+{% for v in variables %}
+### {{ v.title }}
+
+- **ID**: {{ v.detail.id }}
+- **Label**: {{ v.detail.label }}
+- **Definition**: {{ v.detail.definition }}
+- **Source schema element**: {{ v.detail.schema_element }}
+- **Semantics**: {{ v.detail.semantics }}
+- **Allowed values**: {{ v.detail.allowed_values }}
+- **Synonyms**: {{ v.detail.synonyms }}
+- **Sensitivity**: {{ v.detail.sensitivity }}
+- **Derivation**: {{ v.detail.derivation }}
+{% endfor %}
