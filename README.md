@@ -61,32 +61,27 @@ sidecar_roots:
 Computed variables are configured in [config/computed.yaml](config/computed.yaml).
 These are merged into the flat dataset catalogue.
 
-## GitHub Pages Deployment (Option A)
+## GitHub Pages
 
-This repo expects local generation of the static site. A typical flow is:
+This repo uses the GitHub Pages "Deploy from a branch" option with `gh-pages`.
 
-1) Build the site locally:
+### Configure GitHub Pages
 
-```
-ddi_dataset_documentation build
-mkdocs build
-```
+In GitHub: Settings -> Pages -> Deploy from a branch -> `gh-pages` + `/(root)`.
 
-2) Publish the contents of `site/` to the `gh-pages` branch root.
-	 A common approach is to use a git worktree:
+### Publish locally
+
+Build and publish the static site by running:
 
 ```
-git worktree add /tmp/gh-pages gh-pages
-rsync -av site/ /tmp/gh-pages/
-cd /tmp/gh-pages && git add . && git commit -m "Publish site" && git push
+bash scripts/publish_gh_pages.sh
 ```
 
-The workflow in [.github/workflows/gh-pages.yml](.github/workflows/gh-pages.yml)
-deploys the contents of the `gh-pages` branch to GitHub Pages. It does not
-require access to the external XNAT plugin repository.
+This script runs `mkdocs build --clean`, publishes the contents of `site/` to the
+root of the `gh-pages` branch, creates `.nojekyll`, and then returns you to your
+original branch.
 
-## Vendoring Strategy for CI Builds
+### Notes
 
-If you want CI to build the site, mirror sidecar files into this repository
-and update [config/parser.yaml](config/parser.yaml) to point at the local copies.
-This avoids any dependency on external repositories during builds.
+- The static site output is in `site/` and is not committed on `main`.
+- Built artifacts are committed to `gh-pages` only.
