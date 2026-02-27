@@ -4,8 +4,9 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
-# Build MkDocs site into ./site
-mkdocs build --clean
+# Build MkDocs site into a temp dir (avoid cleanup when switching branches)
+SITE_DIR="$(mktemp -d)"
+mkdocs build --clean -d "$SITE_DIR"
 
 CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
@@ -20,7 +21,9 @@ fi
 git rm -r --ignore-unmatch .
 
 # Copy built site to branch root
-cp -R site/* .
+cp -R "$SITE_DIR"/. .
+
+rm -rf "$SITE_DIR"
 
 # Ensure GitHub Pages does not run Jekyll
 touch .nojekyll
