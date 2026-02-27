@@ -77,5 +77,6 @@ class Sidecar(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     display: str
+    description: Optional[str] = None
     display_versions: Dict[str, DisplayVersion]
     display_field_annotations: Dict[str, DisplayFieldAnnotation]

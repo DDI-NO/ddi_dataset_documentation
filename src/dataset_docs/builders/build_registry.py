@@ -99,6 +99,7 @@ def build_registry(
                 experiment_id=experiment_id,
                 slug=slug,
                 scope_path=scope_path,
+                description=sidecar.description or "TODO: Add datatype description.",
                 variables=variables,
             )
         )

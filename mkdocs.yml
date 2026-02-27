@@ -25,9 +25,9 @@ plugins:
 
 nav:
   - Home: index.md
-  - Project:
-      - Structure: project/structure.md
-      - Conventions: project/conventions.md
+  # - Project:
+  #     - Structure: project/structure.md
+  #     - Conventions: project/conventions.md
   - Experiments:
       - Overview: experiments/_intro.md
       - Index: experiments/index.md

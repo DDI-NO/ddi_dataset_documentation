@@ -1,21 +1,27 @@
 display_version: "dump"
 sidecar_roots:
-  - "../xnat-apgem-plugin/src/main/resources/schemas"
+  - "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas"
 
 experiments:
+  mh_MedHistData:
+    enabled: true
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/mh/display/mh_MedHistData_display.meta.yaml"
+    page_slug: "medhist"
+    scope_md: "content/experiments/mh_MedHistData.md"
   diag_DiagnosisData:
     enabled: true
-    sidecar_path: "../xnat-apgem-plugin/src/main/resources/schemas/diag/display/diag_DiagnosisData_display.meta.yaml"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/diag/display/diag_DiagnosisData_display.meta.yaml"
     page_slug: "diag_diagnosis"
     scope_md: "content/experiments/diag_DiagnosisData.md"
   dem_ddiDemographicData:
     enabled: true
-    sidecar_path: "../xnat-apgem-plugin/src/main/resources/schemas/dem/display/dem_ddiDemographicData_display.meta.yaml"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/dem/display/dem_ddiDemographicData_display.meta.yaml"
     page_slug: "demographics"
     scope_md: "content/experiments/dem_ddiDemographicData.md"
 
 flat_dataset:
   include_experiments:
+    - "mh_MedHistData"
     - "diag_DiagnosisData"
     - "dem_ddiDemographicData"
   computed_variables_spec: "config/computed.yaml"

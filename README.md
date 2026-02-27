@@ -56,6 +56,9 @@ sidecar_roots:
 	- "../xnat-apgem-plugin/src/main/resources/schemas"
 ```
 
+You can override `sidecar_roots` at runtime by setting `DDI_SIDECAR_ROOTS` to a
+path-separated list (use `:` on macOS/Linux).
+
 ## Computed Variables
 
 Computed variables are configured in [config/computed.yaml](config/computed.yaml).

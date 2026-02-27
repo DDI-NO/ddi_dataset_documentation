@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import subprocess
 from pathlib import Path
 
@@ -21,11 +22,20 @@ from dataset_docs.utils.paths import resolve_from_root
 app = typer.Typer(add_completion=False)
 
 
+def _resolve_sidecar_roots(config_roots: list[str]) -> list[Path]:
+    env_value = os.environ.get("DDI_SIDECAR_ROOTS", "").strip()
+    if env_value:
+        roots = [path.strip() for path in env_value.split(os.pathsep) if path.strip()]
+    else:
+        roots = config_roots
+    return [resolve_from_root(path) for path in roots]
+
+
 @app.command()
 def build(config: str = "config/parser.yaml") -> None:
     """Build generated documentation pages and assemble docs/ for MkDocs."""
     parser_config = load_parser_config(config)
-    sidecar_roots = [resolve_from_root(path) for path in parser_config.sidecar_roots]
+    sidecar_roots = _resolve_sidecar_roots(parser_config.sidecar_roots)
     discoveries = {d.experiment_id: d.path for d in discover_sidecars(sidecar_roots)}
     sidecar_paths = resolve_sidecar_paths(parser_config, discoveries)
     sidecars = load_sidecars_by_experiment(sidecar_paths)
@@ -51,7 +61,7 @@ def build(config: str = "config/parser.yaml") -> None:
 def validate(config: str = "config/parser.yaml") -> None:
     """Validate sidecars, computed variables, and registry assembly."""
     parser_config = load_parser_config(config)
-    sidecar_roots = [resolve_from_root(path) for path in parser_config.sidecar_roots]
+    sidecar_roots = _resolve_sidecar_roots(parser_config.sidecar_roots)
     discoveries = {d.experiment_id: d.path for d in discover_sidecars(sidecar_roots)}
     sidecar_paths = resolve_sidecar_paths(parser_config, discoveries)
     sidecars = load_sidecars_by_experiment(sidecar_paths)

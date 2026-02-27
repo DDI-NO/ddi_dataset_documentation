@@ -55,6 +55,7 @@ class Experiment:
     experiment_id: str
     slug: str
     scope_path: Optional[str]
+    description: str
     variables: List[Variable]
 
 

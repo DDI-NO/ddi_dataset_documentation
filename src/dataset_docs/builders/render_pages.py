@@ -4,6 +4,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, List
 
+import re
+
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from dataset_docs.model.registry import DatasetColumn, DatasetRegistry, Experiment, Variable
@@ -11,6 +13,8 @@ from dataset_docs.utils.paths import resolve_from_root
 
 
 MARKER = "<!-- AUTO:VARIABLES -->"
+OVERVIEW_MARKER = "<!-- AUTO:OVERVIEW -->"
+OVERVIEW_HEADER_RE = re.compile(r"(^##\s+Overview\s*$)", flags=re.IGNORECASE | re.MULTILINE)
 
 
 @dataclass(frozen=True)
@@ -112,6 +116,29 @@ def _join_list(values: Iterable[str]) -> str:
     return ", ".join(values)
 
 
+def _truncate_description(description: str, *, limit: int = 160) -> str:
+    if len(description) <= limit:
+        return description
+    trimmed = description[: limit - 1].rstrip()
+    return f"{trimmed}..."
+
+
+def _inject_overview_description(scope_content: str, description: str) -> str:
+    if OVERVIEW_MARKER in scope_content:
+        return scope_content.replace(OVERVIEW_MARKER, description)
+    if description in scope_content:
+        return scope_content
+
+    match = OVERVIEW_HEADER_RE.search(scope_content)
+    if not match:
+        return f"## Overview\n{description}\n\n{scope_content}"
+
+    insert_at = match.end()
+    before = scope_content[:insert_at]
+    after = scope_content[insert_at:]
+    return f"{before}\n{description}\n{after}"
+
+
 def _variable_views(variables: List[Variable]) -> List[VariableView]:
     views: List[VariableView] = []
     for variable in variables:
@@ -188,11 +215,11 @@ def _experiment_links(experiments: List[Experiment]) -> List[ExperimentLink]:
     links: List[ExperimentLink] = []
     for experiment in experiments:
         link_text = experiment.experiment_id
-        href = f"experiments/{experiment.slug}.md"
+        href = f"{experiment.slug}.md"
         links.append(
             ExperimentLink(
                 name=experiment.experiment_id,
-                description="Experiment dataset",
+                description=_escape(_truncate_description(experiment.description)),
                 link_text=link_text,
                 href=href,
             )
@@ -221,6 +248,7 @@ def render_experiment_pages(registry: DatasetRegistry, templates_dir: Path, gene
         scope_content = scope_path.read_text(encoding="utf-8")
         if MARKER not in scope_content:
             raise ValueError(f"Marker {MARKER} not found in {scope_path}")
+        scope_content = _inject_overview_description(scope_content, experiment.description)
         variable_section = template.render(variables=_variable_views(experiment.variables))
         output_content = scope_content.replace(MARKER, variable_section)
         out_path = generated_dir / "experiments" / f"{experiment.slug}.md"
