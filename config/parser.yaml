@@ -3,25 +3,54 @@ sidecar_roots:
   - "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas"
 
 experiments:
-  mh_MedHistData:
-    enabled: true
-    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/mh/display/mh_MedHistData_display.meta.yaml"
-    page_slug: "medhist"
-    scope_md: "content/experiments/mh_MedHistData.md"
-  diag_DiagnosisData:
-    enabled: true
-    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/diag/display/diag_DiagnosisData_display.meta.yaml"
-    page_slug: "diag_diagnosis"
-    scope_md: "content/experiments/diag_DiagnosisData.md"
   dem_ddiDemographicData:
     enabled: true
+    display_name: "Demographics"
     sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/dem/display/dem_ddiDemographicData_display.meta.yaml"
     page_slug: "demographics"
     scope_md: "content/experiments/dem_ddiDemographicData.md"
+  mh_MedHistData:
+    enabled: true
+    display_name: "Medical History"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/mh/display/mh_MedHistData_display.meta.yaml"
+    page_slug: "medhist"
+    scope_md: "content/experiments/mh_MedHistData.md"
+  phyex_phyExamData:
+    enabled: true
+    display_name: "Physical Examination"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/phyex/display/phyex_phyExamData_display.meta.yaml"
+    page_slug: "physical_exam"
+    scope_md: "content/experiments/phyex_phyExamData.md"
+  cs_CogScrData:
+    enabled: true
+    display_name: "Cognitive Screening"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/cs/display/cs_CogScrData_display.meta.yaml"
+    page_slug: "cognitive_screening"
+    scope_md: "content/experiments/cs_CogScrData.md"
+  diag_DiagnosisData:
+    enabled: true
+    display_name: "Diagnosis/Staging"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/diag/display/diag_DiagnosisData_display.meta.yaml"
+    page_slug: "diag_diagnosis"
+    scope_md: "content/experiments/diag_DiagnosisData.md"
+  bioch_BiochemistryData:
+    enabled: true
+    display_name: "Blood Biomarkers"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/bioch/display/bioch_BiochemistryData_display.meta.yaml"
+    page_slug: "blood_biomarkers"
+    scope_md: "content/experiments/bioch_BiochemistryData.md"
+  csf_CSFData:
+    enabled: true
+    display_name: "CSF Biomarkers"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/csf/display/csf_CSFData_display.meta.yaml"
+    page_slug: "csf_biomarkers"
+    scope_md: "content/experiments/csf_CSFData.md"
 
 flat_dataset:
   include_experiments:
-    - "mh_MedHistData"
-    - "diag_DiagnosisData"
     - "dem_ddiDemographicData"
+    - "mh_MedHistData"
+    - "cs_CogScrData"
+    - "phyex_phyExamData"
+    - "diag_DiagnosisData"
   computed_variables_spec: "config/computed.yaml"

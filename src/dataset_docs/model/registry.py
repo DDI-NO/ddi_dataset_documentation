@@ -56,6 +56,7 @@ class Experiment:
     slug: str
     scope_path: Optional[str]
     description: str
+    display_name: Optional[str]
     variables: List[Variable]
 
 

@@ -13,6 +13,7 @@ class ExperimentConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     enabled: bool = True
+    display_name: Optional[str] = None
     sidecar_path: Optional[str] = None
     page_slug: Optional[str] = None
     scope_md: Optional[str] = None

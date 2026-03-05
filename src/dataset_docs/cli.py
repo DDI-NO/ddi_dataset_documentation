@@ -46,13 +46,22 @@ def build(config: str = "config/parser.yaml") -> None:
 
     templates_dir = resolve_from_root("templates")
     generated_dir = resolve_from_root("generated")
-    render_experiment_pages(registry, templates_dir, generated_dir)
+    display_names = {
+        experiment_id: (experiment_cfg.display_name or experiment_id)
+        for experiment_id, experiment_cfg in parser_config.experiments.items()
+    }
+    render_experiment_pages(registry, templates_dir, generated_dir, display_names=display_names)
     render_dataset_catalog(registry, templates_dir, generated_dir)
-    render_experiments_index(registry, templates_dir, generated_dir)
+    render_experiments_index(registry, templates_dir, generated_dir, display_names=display_names)
 
     content_dir = resolve_from_root("content")
     docs_dir = resolve_from_root("docs")
-    assemble_docs(content_dir, generated_dir, docs_dir)
+    exclude_content_paths = [
+        resolve_from_root(experiment_cfg.scope_md)
+        for experiment_cfg in parser_config.experiments.values()
+        if experiment_cfg.scope_md
+    ]
+    assemble_docs(content_dir, generated_dir, docs_dir, exclude_content_paths=exclude_content_paths)
 
     typer.echo("Docs generated in docs/ and generated/")
 

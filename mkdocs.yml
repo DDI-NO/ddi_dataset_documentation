@@ -29,10 +29,11 @@ nav:
   #     - Structure: project/structure.md
   #     - Conventions: project/conventions.md
   - Experiments:
-      - Overview: experiments/_intro.md
-      - Index: experiments/index.md
-      - Diagnosis (example): experiments/diag_diagnosis.md
-      - Demographics (example): experiments/demographics.md
+      # - Overview: experiments/_intro.md
+      # - Index: experiments/index.md
+      # - Diagnosis (example): experiments/diag_diagnosis.md
+      # - Demographics (example): experiments/demographics.md
+      - Catalog: experiments/index.md
   - Dataset:
       - Overview: dataset/_intro.md
       - Variables: dataset/variables.md
