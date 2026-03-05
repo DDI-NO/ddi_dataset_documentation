@@ -1,0 +1,5533 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Generated documentation for DDI datasets">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Csf biomarkers - DDI Dataset Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DDI Dataset Documentation" class="md-header__button md-logo" aria-label="DDI Dataset Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DDI Dataset Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Csf biomarkers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Experiments
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../dataset/_intro/" class="md-tabs__link">
+          
+  
+  
+  Dataset
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DDI Dataset Documentation" class="md-nav__button md-logo" aria-label="DDI Dataset Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DDI Dataset Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dataset
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dataset
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dataset/_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dataset/variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#csf-biomarkers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF Biomarkers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSF Biomarkers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Label
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Age
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tube_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tube_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freeze_thaw_cycles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        freeze_thaw_cycles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_leukoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Leukoc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_leukocnorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_LeukocNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_glu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Glu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_glunorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_GluNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_totprot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_TotProt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_totprotnorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_TotProtNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_albumin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Albumin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_albuminnorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_AlbuminNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csfplasma-albumin-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF/Plasma Albumin Ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_abeta42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Abeta42
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_abeta42norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Abeta42Norm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_abeta40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Abeta40
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_abeta40norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Abeta40Norm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_abeta38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Abeta38
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_abeta38norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Abeta38Norm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_alphasyn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Alphasyn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_alphasynnorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_AlphasynNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_tottau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_TotTau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_tottaunorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_TotTauNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_ptau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_Ptau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_ptaunorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_PtauNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_nfl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_NFL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csf_nflnorm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSF_NFLNorm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluesterin-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cluesterin mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterin-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clusterin CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterin-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clusterin date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusterin-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clusterin plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fractalkin-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fractalkin mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fractalkin-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fractalkin CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fractalkin-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fractalkin date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fractalkin-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fractalkin plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ykl40-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YKL40 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ykl40-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YKL40 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ykl40-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YKL40 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ykl40-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YKL40 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp1-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP1 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp1-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP1 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp1-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP1 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp1-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP1 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tnfa-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TNFa mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tnfa-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TNFa CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tnfa-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TNFa date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tnfa-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TNFa plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifnb-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFNb mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifnb-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFNb CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifnb-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFNb date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifnb-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFNb plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifn_gamma-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFN_gamma mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifn_gamma-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFN_gamma CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifn_gamma-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFN_gamma date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifn_gamma-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IFN_gamma plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il1b-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL1b mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il1b-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL1b CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il1b-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL1b date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il1b-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL1b plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il6-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL6 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il6-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL6 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il6-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL6 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il6-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL6 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il10-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL10 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il10-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL10 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il10-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL10 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il10-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL10 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il12p70-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL12p70 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il12p70-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL12p70 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il12p70-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL12p70 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il12p70-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL12p70 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il13-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL13 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il13-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL13 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il13-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL13 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il13-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL13 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il18-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL18 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il18-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL18 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il18-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL18 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il18-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IL18 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trem2-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TREM2 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trem2-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TREM2 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trem2-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TREM2 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trem2-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TREM2 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmp9-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMP9 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmp9-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMP9 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmp9-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMP9 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmp9-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMP9 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp1-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP1 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp1-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP1 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp1-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP1 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp1-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP1 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bace-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BACE mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bace-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BACE CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bace-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BACE date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bace-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BACE plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ng-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NG mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ng-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NG CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ng-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NG date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ng-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NG plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_38-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_38 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_38-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_38 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_date-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_date CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_date-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_date plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_40-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_40 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_40-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_40 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_40-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_40 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_40-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_40 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_42-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_42 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_42-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_42 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_42-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_42 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_ab_42-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_AB_42 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_34-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_34 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_34-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_34 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_34-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_34 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_34-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_34 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_20_x-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_20_X mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_20_x-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_20_X CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_20_x-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_20_X date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_20_x-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_20_X plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_40-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_40 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_40-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_40 CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_40-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_40 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_x_40-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_X_40 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_gfap_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_GFAP_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-cv_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_gfap-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_GFAP date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_gfap-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_GFAP plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_pdgfrbeta_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_PDGFRBETA_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-cv_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_pdgfrbeta-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_PDGFRBETA date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_pdgfrbeta-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_PDGFRBETA plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_mmp2_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_MMP2_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_nfl-cv_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_NfL CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_mmp2-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_MMP2 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msd_mmp2-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSD_MMP2 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-2-macroglobulin-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alpha-2-macroglobulin mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-2-macroglobulin-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alpha-2-macroglobulin date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-2-macroglobulin-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alpha-2-macroglobulin plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp-2-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP-2 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp-2-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP-2 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timp-2-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMP-2 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tyro3-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tyro3 mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tyro3-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tyro3 date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tyro3-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tyro3 plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axl-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Axl mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axl-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Axl date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axl-plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Axl plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_bd_tau_carboxylated_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_BD_Tau_carboxylated_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p181_carboxylated_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p181_carboxylated_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p181_dyed_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p181_dyed_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p231_carboxylated_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p231_carboxylated_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p231_dyed_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p231_dyed_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p217_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p217_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_gap43_csf_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_GAP43_csf_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_nptx1_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_NPTX1_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_nptxr_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_NPTXR_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratio-4240" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ratio 42/40
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abeta-cutoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abeta cutoff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a_hierarchical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A_hierarchical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a_ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A_ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a_ratio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A_ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a_innotest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A_innotest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ATN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atn_amypet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ATN_amypet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atn-innotest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ATN Innotest
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>CSF Biochemistry data</p>
+<h1 id="csf-biomarkers">CSF Biomarkers<a class="headerlink" href="#csf-biomarkers" title="Permanent link">&para;</a></h1>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Label</th>
+<th>Definition</th>
+<th>Level</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LABEL</td>
+<td>Label</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>Date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>Age</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>tube_type</td>
+<td>tube_type</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>freeze_thaw_cycles</td>
+<td>freeze_thaw_cycles</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_LEUKOC</td>
+<td>CSF_Leukoc</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_LEUKOCNORM</td>
+<td>CSF_LeukocNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_GLU</td>
+<td>CSF_Glu</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_GLUNORM</td>
+<td>CSF_GluNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_TOTPROT</td>
+<td>CSF_TotProt</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_TOTPROTNORM</td>
+<td>CSF_TotProtNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ALBUMIN</td>
+<td>CSF_Albumin</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ALBUMINNORM</td>
+<td>CSF_AlbuminNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>ALBUMIN_RATIO</td>
+<td>CSF/Plasma Albumin Ratio</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>CSF_ABETA42</td>
+<td>CSF_Abeta42</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ABETA42NORM</td>
+<td>CSF_Abeta42Norm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ABETA40</td>
+<td>CSF_Abeta40</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ABETA40NORM</td>
+<td>CSF_Abeta40Norm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ABETA38</td>
+<td>CSF_Abeta38</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ABETA38NORM</td>
+<td>CSF_Abeta38Norm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ALPHASYN</td>
+<td>CSF_Alphasyn</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_ALPHASYNNORM</td>
+<td>CSF_AlphasynNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_TOTTAU</td>
+<td>CSF_TotTau</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_TOTTAUNORM</td>
+<td>CSF_TotTauNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_PTAU</td>
+<td>CSF_Ptau</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_PTAUNORM</td>
+<td>CSF_PtauNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_NFL</td>
+<td>CSF_NFL</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>CSF_NFLNORM</td>
+<td>CSF_NFLNorm</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>clusterin_mean</td>
+<td>Cluesterin mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Clusterin_cv</td>
+<td>Clusterin CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Clusterin_date</td>
+<td>Clusterin date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>Clusterin_plate</td>
+<td>Clusterin plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Fractalkin_mean</td>
+<td>Fractalkin mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Fractalkin_cv</td>
+<td>Fractalkin CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Fractalkin_date</td>
+<td>Fractalkin date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>Fractalkin_plate</td>
+<td>Fractalkin plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>YKL40_mean</td>
+<td>YKL40 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>YKL40_cv</td>
+<td>YKL40 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>YKL40_date</td>
+<td>YKL40 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>YKL40_plate</td>
+<td>YKL40 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MCP1_mean</td>
+<td>MCP1 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MCP1_cv</td>
+<td>MCP1 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MCP1_date</td>
+<td>MCP1 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MCP1_plate</td>
+<td>MCP1 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>TNFa_mean</td>
+<td>TNFa mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TNFa_cv</td>
+<td>TNFa CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TNFa_date</td>
+<td>TNFa date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>TNFa_plate</td>
+<td>TNFa plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IFNb_mean</td>
+<td>IFNb mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IFNb_cv</td>
+<td>IFNb CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IFNb_date</td>
+<td>IFNb date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IFNb_plate</td>
+<td>IFNb plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IFN_gamma_mean</td>
+<td>IFN_gamma mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IFN_gamma_cv</td>
+<td>IFN_gamma CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IFN_gamma_date</td>
+<td>IFN_gamma date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IFN_gamma_plate</td>
+<td>IFN_gamma plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IL1b_mean</td>
+<td>IL1b mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL1b_cv</td>
+<td>IL1b CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL1b_date</td>
+<td>IL1b date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IL1b_plate</td>
+<td>IL1b plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IL6_mean</td>
+<td>IL6 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL6_cv</td>
+<td>IL6 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL6_date</td>
+<td>IL6 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IL6_plate</td>
+<td>IL6 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IL10_mean</td>
+<td>IL10 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL10_cv</td>
+<td>IL10 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL10_date</td>
+<td>IL10 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IL10_plate</td>
+<td>IL10 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IL12p70_mean</td>
+<td>IL12p70 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL12p70_cv</td>
+<td>IL12p70 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL12p70_date</td>
+<td>IL12p70 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IL12p70_plate</td>
+<td>IL12p70 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IL13_mean</td>
+<td>IL13 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL13_cv</td>
+<td>IL13 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL13_date</td>
+<td>IL13 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IL13_plate</td>
+<td>IL13 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>IL18_mean</td>
+<td>IL18 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL18_cv</td>
+<td>IL18 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>IL18_date</td>
+<td>IL18 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>IL18_plate</td>
+<td>IL18 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>TREM2_mean</td>
+<td>TREM2 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TREM2_cv</td>
+<td>TREM2 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TREM2_date</td>
+<td>TREM2 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>TREM2_plate</td>
+<td>TREM2 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MMP9_mean</td>
+<td>MMP9 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MMP9_cv</td>
+<td>MMP9 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MMP9_date</td>
+<td>MMP9 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MMP9_plate</td>
+<td>MMP9 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>TIMP1_mean</td>
+<td>TIMP1 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TIMP1_cv</td>
+<td>TIMP1 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TIMP1_date</td>
+<td>TIMP1 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>TIMP1_plate</td>
+<td>TIMP1 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>BACE_mean</td>
+<td>BACE mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>BACE_cv</td>
+<td>BACE CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>BACE_date</td>
+<td>BACE date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>BACE_plate</td>
+<td>BACE plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>NG_mean</td>
+<td>NG mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>NG_cv</td>
+<td>NG CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>NG_date</td>
+<td>NG date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>NG_plate</td>
+<td>NG plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_AB_38_mean</td>
+<td>MSD_AB_38 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_AB_38_cv</td>
+<td>MSD_AB_38 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_AB_38_date</td>
+<td>MSD_AB_date CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_AB_38_plate</td>
+<td>MSD_AB_date plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_AB_40_mean</td>
+<td>MSD_AB_40 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_AB_40_cv</td>
+<td>MSD_AB_40 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_AB_40_date</td>
+<td>MSD_AB_40 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_AB_40_plate</td>
+<td>MSD_AB_40 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_AB_42_mean</td>
+<td>MSD_AB_42 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_AB_42_cv</td>
+<td>MSD_AB_42 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_AB_42_date</td>
+<td>MSD_AB_42 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_AB_42_plate</td>
+<td>MSD_AB_42 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_X_34_mean</td>
+<td>MSD_X_34 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_X_34_cv</td>
+<td>MSD_X_34 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_X_34_date</td>
+<td>MSD_X_34 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_X_34_plate</td>
+<td>MSD_X_34 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_20_X_mean</td>
+<td>MSD_20_X mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_20_X_cv</td>
+<td>MSD_20_X CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_20_X_date</td>
+<td>MSD_20_X date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_20_X_plate</td>
+<td>MSD_20_X plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_X_40_mean</td>
+<td>MSD_X_40 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_X_40_cv</td>
+<td>MSD_X_40 CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_X_40_date</td>
+<td>MSD_X_40 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_X_40_plate</td>
+<td>MSD_X_40 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_NfL_mean</td>
+<td>MSD_NfL mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_NfL_cv</td>
+<td>MSD_NfL CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_NfL_date</td>
+<td>MSD_NfL date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_NfL_plate</td>
+<td>MSD_NfL plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_GFAP_mean</td>
+<td>MSD_GFAP_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_GFAP_cv</td>
+<td>MSD_NfL CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_GFAP_date</td>
+<td>MSD_GFAP date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_GFAP_plate</td>
+<td>MSD_GFAP plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_PDGFRBETA_mean</td>
+<td>MSD_PDGFRBETA_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_PDGFRBETA_cv</td>
+<td>MSD_NfL CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_PDGFRBETA_date</td>
+<td>MSD_PDGFRBETA date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_PDGFRBETA_plate</td>
+<td>MSD_PDGFRBETA plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>MSD_MMP2_mean</td>
+<td>MSD_MMP2_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_MMP2_cv</td>
+<td>MSD_NfL CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>MSD_MMP2_date</td>
+<td>MSD_MMP2 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>MSD_MMP2_plate</td>
+<td>MSD_MMP2 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>VEGF_C_mean</td>
+<td>VEGF_C mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>VEGF_C_date</td>
+<td>VEGF_C date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>VEGF_C_plate</td>
+<td>VEGF_C plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>VEGF_A_mean</td>
+<td>VEGF_A mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>VEGF_A_date</td>
+<td>VEGF_A date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>VEGF_A_plate</td>
+<td>VEGF_A plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>PlGF_mean</td>
+<td>PlGF mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>PlGF_date</td>
+<td>PlGF date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>PlGF_plate</td>
+<td>PlGF plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>alpha2M_mean</td>
+<td>alpha-2-macroglobulin mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>alpha2M_date</td>
+<td>alpha-2-macroglobulin date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>alpha2M_plate</td>
+<td>alpha-2-macroglobulin plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>TIMP2_mean</td>
+<td>TIMP-2 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>TIMP2_date</td>
+<td>TIMP-2 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>TIMP2_plate</td>
+<td>TIMP-2 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>tyro3_mean</td>
+<td>Tyro3 mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>tyro3_date</td>
+<td>Tyro3 date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>tyro3_plate</td>
+<td>Tyro3 plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>axl_mean</td>
+<td>Axl mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>axl_date</td>
+<td>Axl date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>axl_plate</td>
+<td>Axl plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>UGOT_BD_Tau_carboxylated_csf_mean</td>
+<td>UGOT_BD_Tau_carboxylated_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p181_carboxylated_csf_mean</td>
+<td>UGOT_p181_carboxylated_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p181_dyed_csf_mean</td>
+<td>UGOT_p181_dyed_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p231_carboxylated_csf_mean</td>
+<td>UGOT_p231_carboxylated_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p231_dyed_csf_mean</td>
+<td>UGOT_p231_dyed_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p217_csf_mean</td>
+<td>UGOT_p217_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_GAP43_csf_mean</td>
+<td>UGOT_GAP43_csf_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_NPTX1_mean</td>
+<td>UGOT_NPTX1_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_NPTXR_mean</td>
+<td>UGOT_NPTXR_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>ratio_42_40</td>
+<td>Ratio 42/40</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>abeta_cutoff</td>
+<td>Abeta cutoff</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>a_hierarchical</td>
+<td>A_hierarchical</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>a</td>
+<td>A_ratio</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>a_ratio</td>
+<td>A_ratio</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>a_inno</td>
+<td>A_innotest</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>t</td>
+<td>T</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>n</td>
+<td>N</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>atn</td>
+<td>ATN</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>atn_amypet</td>
+<td>ATN_amypet</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+<tr>
+<td>atn_inno</td>
+<td>ATN Innotest</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>categorical</td>
+</tr>
+</tbody>
+</table>
+<h3 id="label">Label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: LABEL</li>
+<li><strong>Label</strong>: Label</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Label, label, LABEL</li>
+</ul>
+<h3 id="date">Date<a class="headerlink" href="#date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: DATE</li>
+<li><strong>Label</strong>: Date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Date, date, DATE</li>
+</ul>
+<h3 id="age">Age<a class="headerlink" href="#age" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: AGE</li>
+<li><strong>Label</strong>: Age</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Age, age, AGE</li>
+</ul>
+<h3 id="tube_type">tube_type<a class="headerlink" href="#tube_type" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: tube_type</li>
+<li><strong>Label</strong>: tube_type</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: tube_type, tube type, Tube Type, TUBE_TYPE</li>
+</ul>
+<h3 id="freeze_thaw_cycles">freeze_thaw_cycles<a class="headerlink" href="#freeze_thaw_cycles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: freeze_thaw_cycles</li>
+<li><strong>Label</strong>: freeze_thaw_cycles</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: freeze_thaw_cycles, freeze thaw cycles, Freeze Thaw Cycles, FREEZE_THAW_CYCLES</li>
+</ul>
+<h3 id="csf_leukoc">CSF_Leukoc<a class="headerlink" href="#csf_leukoc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_LEUKOC</li>
+<li><strong>Label</strong>: CSF_Leukoc</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Leukoc, csf_leukoc, CSF Leukoc, csf leukoc, CSF_LEUKOC</li>
+</ul>
+<h3 id="csf_leukocnorm">CSF_LeukocNorm<a class="headerlink" href="#csf_leukocnorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_LEUKOCNORM</li>
+<li><strong>Label</strong>: CSF_LeukocNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_LeukocNorm, csf_leukocnorm, CSF LeukocNorm, csf leukocnorm, CSF_LEUKOCNORM</li>
+</ul>
+<h3 id="csf_glu">CSF_Glu<a class="headerlink" href="#csf_glu" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_GLU</li>
+<li><strong>Label</strong>: CSF_Glu</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Glu, csf_glu, CSF Glu, csf glu, CSF_GLU</li>
+</ul>
+<h3 id="csf_glunorm">CSF_GluNorm<a class="headerlink" href="#csf_glunorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_GLUNORM</li>
+<li><strong>Label</strong>: CSF_GluNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_GluNorm, csf_glunorm, CSF GluNorm, csf glunorm, CSF_GLUNORM</li>
+</ul>
+<h3 id="csf_totprot">CSF_TotProt<a class="headerlink" href="#csf_totprot" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_TOTPROT</li>
+<li><strong>Label</strong>: CSF_TotProt</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_TotProt, csf_totprot, CSF TotProt, csf totprot, CSF_TOTPROT</li>
+</ul>
+<h3 id="csf_totprotnorm">CSF_TotProtNorm<a class="headerlink" href="#csf_totprotnorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_TOTPROTNORM</li>
+<li><strong>Label</strong>: CSF_TotProtNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_TotProtNorm, csf_totprotnorm, CSF TotProtNorm, csf totprotnorm, CSF_TOTPROTNORM</li>
+</ul>
+<h3 id="csf_albumin">CSF_Albumin<a class="headerlink" href="#csf_albumin" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ALBUMIN</li>
+<li><strong>Label</strong>: CSF_Albumin</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Albumin, csf_albumin, CSF Albumin, csf albumin, CSF_ALBUMIN</li>
+</ul>
+<h3 id="csf_albuminnorm">CSF_AlbuminNorm<a class="headerlink" href="#csf_albuminnorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ALBUMINNORM</li>
+<li><strong>Label</strong>: CSF_AlbuminNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_AlbuminNorm, csf_albuminnorm, CSF AlbuminNorm, csf albuminnorm, CSF_ALBUMINNORM</li>
+</ul>
+<h3 id="csfplasma-albumin-ratio">CSF/Plasma Albumin Ratio<a class="headerlink" href="#csfplasma-albumin-ratio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: ALBUMIN_RATIO</li>
+<li><strong>Label</strong>: CSF/Plasma Albumin Ratio</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF/Plasma Albumin Ratio, csf/plasma albumin ratio, ALBUMIN_RATIO, albumin_ratio</li>
+</ul>
+<h3 id="csf_abeta42">CSF_Abeta42<a class="headerlink" href="#csf_abeta42" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ABETA42</li>
+<li><strong>Label</strong>: CSF_Abeta42</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Abeta42, csf_abeta42, CSF Abeta42, csf abeta42, CSF_ABETA42</li>
+</ul>
+<h3 id="csf_abeta42norm">CSF_Abeta42Norm<a class="headerlink" href="#csf_abeta42norm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ABETA42NORM</li>
+<li><strong>Label</strong>: CSF_Abeta42Norm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Abeta42Norm, csf_abeta42norm, CSF Abeta42Norm, csf abeta42norm, CSF_ABETA42NORM</li>
+</ul>
+<h3 id="csf_abeta40">CSF_Abeta40<a class="headerlink" href="#csf_abeta40" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ABETA40</li>
+<li><strong>Label</strong>: CSF_Abeta40</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Abeta40, csf_abeta40, CSF Abeta40, csf abeta40, CSF_ABETA40</li>
+</ul>
+<h3 id="csf_abeta40norm">CSF_Abeta40Norm<a class="headerlink" href="#csf_abeta40norm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ABETA40NORM</li>
+<li><strong>Label</strong>: CSF_Abeta40Norm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Abeta40Norm, csf_abeta40norm, CSF Abeta40Norm, csf abeta40norm, CSF_ABETA40NORM</li>
+</ul>
+<h3 id="csf_abeta38">CSF_Abeta38<a class="headerlink" href="#csf_abeta38" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ABETA38</li>
+<li><strong>Label</strong>: CSF_Abeta38</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Abeta38, csf_abeta38, CSF Abeta38, csf abeta38, CSF_ABETA38</li>
+</ul>
+<h3 id="csf_abeta38norm">CSF_Abeta38Norm<a class="headerlink" href="#csf_abeta38norm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ABETA38NORM</li>
+<li><strong>Label</strong>: CSF_Abeta38Norm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Abeta38Norm, csf_abeta38norm, CSF Abeta38Norm, csf abeta38norm, CSF_ABETA38NORM</li>
+</ul>
+<h3 id="csf_alphasyn">CSF_Alphasyn<a class="headerlink" href="#csf_alphasyn" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ALPHASYN</li>
+<li><strong>Label</strong>: CSF_Alphasyn</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Alphasyn, csf_alphasyn, CSF Alphasyn, csf alphasyn, CSF_ALPHASYN</li>
+</ul>
+<h3 id="csf_alphasynnorm">CSF_AlphasynNorm<a class="headerlink" href="#csf_alphasynnorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_ALPHASYNNORM</li>
+<li><strong>Label</strong>: CSF_AlphasynNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_AlphasynNorm, csf_alphasynnorm, CSF AlphasynNorm, csf alphasynnorm, CSF_ALPHASYNNORM</li>
+</ul>
+<h3 id="csf_tottau">CSF_TotTau<a class="headerlink" href="#csf_tottau" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_TOTTAU</li>
+<li><strong>Label</strong>: CSF_TotTau</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_TotTau, csf_tottau, CSF TotTau, csf tottau, CSF_TOTTAU</li>
+</ul>
+<h3 id="csf_tottaunorm">CSF_TotTauNorm<a class="headerlink" href="#csf_tottaunorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_TOTTAUNORM</li>
+<li><strong>Label</strong>: CSF_TotTauNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_TotTauNorm, csf_tottaunorm, CSF TotTauNorm, csf tottaunorm, CSF_TOTTAUNORM</li>
+</ul>
+<h3 id="csf_ptau">CSF_Ptau<a class="headerlink" href="#csf_ptau" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_PTAU</li>
+<li><strong>Label</strong>: CSF_Ptau</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_Ptau, csf_ptau, CSF Ptau, csf ptau, CSF_PTAU</li>
+</ul>
+<h3 id="csf_ptaunorm">CSF_PtauNorm<a class="headerlink" href="#csf_ptaunorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_PTAUNORM</li>
+<li><strong>Label</strong>: CSF_PtauNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_PtauNorm, csf_ptaunorm, CSF PtauNorm, csf ptaunorm, CSF_PTAUNORM</li>
+</ul>
+<h3 id="csf_nfl">CSF_NFL<a class="headerlink" href="#csf_nfl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_NFL</li>
+<li><strong>Label</strong>: CSF_NFL</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_NFL, csf_nfl, CSF NFL, csf nfl</li>
+</ul>
+<h3 id="csf_nflnorm">CSF_NFLNorm<a class="headerlink" href="#csf_nflnorm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: CSF_NFLNORM</li>
+<li><strong>Label</strong>: CSF_NFLNorm</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CSF_NFLNorm, csf_nflnorm, CSF NFLNorm, csf nflnorm, CSF_NFLNORM</li>
+</ul>
+<h3 id="cluesterin-mean">Cluesterin mean<a class="headerlink" href="#cluesterin-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: clusterin_mean</li>
+<li><strong>Label</strong>: Cluesterin mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Cluesterin mean, cluesterin mean, clusterin_mean</li>
+</ul>
+<h3 id="clusterin-cv">Clusterin CV<a class="headerlink" href="#clusterin-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Clusterin_cv</li>
+<li><strong>Label</strong>: Clusterin CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Clusterin CV, clusterin cv, Clusterin_cv, clusterin_cv</li>
+</ul>
+<h3 id="clusterin-date">Clusterin date<a class="headerlink" href="#clusterin-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Clusterin_date</li>
+<li><strong>Label</strong>: Clusterin date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Clusterin date, clusterin date, Clusterin_date, clusterin_date</li>
+</ul>
+<h3 id="clusterin-plate">Clusterin plate<a class="headerlink" href="#clusterin-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Clusterin_plate</li>
+<li><strong>Label</strong>: Clusterin plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Clusterin plate, clusterin plate, Clusterin_plate, clusterin_plate</li>
+</ul>
+<h3 id="fractalkin-mean">Fractalkin mean<a class="headerlink" href="#fractalkin-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Fractalkin_mean</li>
+<li><strong>Label</strong>: Fractalkin mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Fractalkin mean, fractalkin mean, Fractalkin_mean, fractalkin_mean</li>
+</ul>
+<h3 id="fractalkin-cv">Fractalkin CV<a class="headerlink" href="#fractalkin-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Fractalkin_cv</li>
+<li><strong>Label</strong>: Fractalkin CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Fractalkin CV, fractalkin cv, Fractalkin_cv, fractalkin_cv</li>
+</ul>
+<h3 id="fractalkin-date">Fractalkin date<a class="headerlink" href="#fractalkin-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Fractalkin_date</li>
+<li><strong>Label</strong>: Fractalkin date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Fractalkin date, fractalkin date, Fractalkin_date, fractalkin_date</li>
+</ul>
+<h3 id="fractalkin-plate">Fractalkin plate<a class="headerlink" href="#fractalkin-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Fractalkin_plate</li>
+<li><strong>Label</strong>: Fractalkin plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Fractalkin plate, fractalkin plate, Fractalkin_plate, fractalkin_plate</li>
+</ul>
+<h3 id="ykl40-mean">YKL40 mean<a class="headerlink" href="#ykl40-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: YKL40_mean</li>
+<li><strong>Label</strong>: YKL40 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: YKL40 mean, ykl40 mean, YKL40_mean, ykl40_mean</li>
+</ul>
+<h3 id="ykl40-cv">YKL40 CV<a class="headerlink" href="#ykl40-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: YKL40_cv</li>
+<li><strong>Label</strong>: YKL40 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: YKL40 CV, ykl40 cv, YKL40_cv, ykl40_cv</li>
+</ul>
+<h3 id="ykl40-date">YKL40 date<a class="headerlink" href="#ykl40-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: YKL40_date</li>
+<li><strong>Label</strong>: YKL40 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: YKL40 date, ykl40 date, YKL40_date, ykl40_date</li>
+</ul>
+<h3 id="ykl40-plate">YKL40 plate<a class="headerlink" href="#ykl40-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: YKL40_plate</li>
+<li><strong>Label</strong>: YKL40 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: YKL40 plate, ykl40 plate, YKL40_plate, ykl40_plate</li>
+</ul>
+<h3 id="mcp1-mean">MCP1 mean<a class="headerlink" href="#mcp1-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MCP1_mean</li>
+<li><strong>Label</strong>: MCP1 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MCP1 mean, mcp1 mean, MCP1_mean, mcp1_mean</li>
+</ul>
+<h3 id="mcp1-cv">MCP1 CV<a class="headerlink" href="#mcp1-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MCP1_cv</li>
+<li><strong>Label</strong>: MCP1 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MCP1 CV, mcp1 cv, MCP1_cv, mcp1_cv</li>
+</ul>
+<h3 id="mcp1-date">MCP1 date<a class="headerlink" href="#mcp1-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MCP1_date</li>
+<li><strong>Label</strong>: MCP1 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MCP1 date, mcp1 date, MCP1_date, mcp1_date</li>
+</ul>
+<h3 id="mcp1-plate">MCP1 plate<a class="headerlink" href="#mcp1-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MCP1_plate</li>
+<li><strong>Label</strong>: MCP1 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MCP1 plate, mcp1 plate, MCP1_plate, mcp1_plate</li>
+</ul>
+<h3 id="tnfa-mean">TNFa mean<a class="headerlink" href="#tnfa-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TNFa_mean</li>
+<li><strong>Label</strong>: TNFa mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TNFa mean, tnfa mean, TNFa_mean, tnfa_mean</li>
+</ul>
+<h3 id="tnfa-cv">TNFa CV<a class="headerlink" href="#tnfa-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TNFa_cv</li>
+<li><strong>Label</strong>: TNFa CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TNFa CV, tnfa cv, TNFa_cv, tnfa_cv</li>
+</ul>
+<h3 id="tnfa-date">TNFa date<a class="headerlink" href="#tnfa-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TNFa_date</li>
+<li><strong>Label</strong>: TNFa date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TNFa date, tnfa date, TNFa_date, tnfa_date</li>
+</ul>
+<h3 id="tnfa-plate">TNFa plate<a class="headerlink" href="#tnfa-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TNFa_plate</li>
+<li><strong>Label</strong>: TNFa plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TNFa plate, tnfa plate, TNFa_plate, tnfa_plate</li>
+</ul>
+<h3 id="ifnb-mean">IFNb mean<a class="headerlink" href="#ifnb-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFNb_mean</li>
+<li><strong>Label</strong>: IFNb mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFNb mean, ifnb mean, IFNb_mean, ifnb_mean</li>
+</ul>
+<h3 id="ifnb-cv">IFNb CV<a class="headerlink" href="#ifnb-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFNb_cv</li>
+<li><strong>Label</strong>: IFNb CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFNb CV, ifnb cv, IFNb_cv, ifnb_cv</li>
+</ul>
+<h3 id="ifnb-date">IFNb date<a class="headerlink" href="#ifnb-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFNb_date</li>
+<li><strong>Label</strong>: IFNb date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFNb date, ifnb date, IFNb_date, ifnb_date</li>
+</ul>
+<h3 id="ifnb-plate">IFNb plate<a class="headerlink" href="#ifnb-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFNb_plate</li>
+<li><strong>Label</strong>: IFNb plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFNb plate, ifnb plate, IFNb_plate, ifnb_plate</li>
+</ul>
+<h3 id="ifn_gamma-mean">IFN_gamma mean<a class="headerlink" href="#ifn_gamma-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFN_gamma_mean</li>
+<li><strong>Label</strong>: IFN_gamma mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFN_gamma mean, ifn_gamma mean, IFN gamma mean, ifn gamma mean, IFN_gamma_mean, ifn_gamma_mean</li>
+</ul>
+<h3 id="ifn_gamma-cv">IFN_gamma CV<a class="headerlink" href="#ifn_gamma-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFN_gamma_cv</li>
+<li><strong>Label</strong>: IFN_gamma CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFN_gamma CV, ifn_gamma cv, IFN gamma CV, ifn gamma cv, IFN_gamma_cv, ifn_gamma_cv</li>
+</ul>
+<h3 id="ifn_gamma-date">IFN_gamma date<a class="headerlink" href="#ifn_gamma-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFN_gamma_date</li>
+<li><strong>Label</strong>: IFN_gamma date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFN_gamma date, ifn_gamma date, IFN gamma date, ifn gamma date, IFN_gamma_date, ifn_gamma_date</li>
+</ul>
+<h3 id="ifn_gamma-plate">IFN_gamma plate<a class="headerlink" href="#ifn_gamma-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IFN_gamma_plate</li>
+<li><strong>Label</strong>: IFN_gamma plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IFN_gamma plate, ifn_gamma plate, IFN gamma plate, ifn gamma plate, IFN_gamma_plate, ifn_gamma_plate</li>
+</ul>
+<h3 id="il1b-mean">IL1b mean<a class="headerlink" href="#il1b-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL1b_mean</li>
+<li><strong>Label</strong>: IL1b mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL1b mean, il1b mean, IL1b_mean, il1b_mean</li>
+</ul>
+<h3 id="il1b-cv">IL1b CV<a class="headerlink" href="#il1b-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL1b_cv</li>
+<li><strong>Label</strong>: IL1b CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL1b CV, il1b cv, IL1b_cv, il1b_cv</li>
+</ul>
+<h3 id="il1b-date">IL1b date<a class="headerlink" href="#il1b-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL1b_date</li>
+<li><strong>Label</strong>: IL1b date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL1b date, il1b date, IL1b_date, il1b_date</li>
+</ul>
+<h3 id="il1b-plate">IL1b plate<a class="headerlink" href="#il1b-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL1b_plate</li>
+<li><strong>Label</strong>: IL1b plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL1b plate, il1b plate, IL1b_plate, il1b_plate</li>
+</ul>
+<h3 id="il6-mean">IL6 mean<a class="headerlink" href="#il6-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL6_mean</li>
+<li><strong>Label</strong>: IL6 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL6 mean, il6 mean, IL6_mean, il6_mean</li>
+</ul>
+<h3 id="il6-cv">IL6 CV<a class="headerlink" href="#il6-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL6_cv</li>
+<li><strong>Label</strong>: IL6 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL6 CV, il6 cv, IL6_cv, il6_cv</li>
+</ul>
+<h3 id="il6-date">IL6 date<a class="headerlink" href="#il6-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL6_date</li>
+<li><strong>Label</strong>: IL6 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL6 date, il6 date, IL6_date, il6_date</li>
+</ul>
+<h3 id="il6-plate">IL6 plate<a class="headerlink" href="#il6-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL6_plate</li>
+<li><strong>Label</strong>: IL6 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL6 plate, il6 plate, IL6_plate, il6_plate</li>
+</ul>
+<h3 id="il10-mean">IL10 mean<a class="headerlink" href="#il10-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL10_mean</li>
+<li><strong>Label</strong>: IL10 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL10 mean, il10 mean, IL10_mean, il10_mean</li>
+</ul>
+<h3 id="il10-cv">IL10 CV<a class="headerlink" href="#il10-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL10_cv</li>
+<li><strong>Label</strong>: IL10 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL10 CV, il10 cv, IL10_cv, il10_cv</li>
+</ul>
+<h3 id="il10-date">IL10 date<a class="headerlink" href="#il10-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL10_date</li>
+<li><strong>Label</strong>: IL10 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL10 date, il10 date, IL10_date, il10_date</li>
+</ul>
+<h3 id="il10-plate">IL10 plate<a class="headerlink" href="#il10-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL10_plate</li>
+<li><strong>Label</strong>: IL10 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL10 plate, il10 plate, IL10_plate, il10_plate</li>
+</ul>
+<h3 id="il12p70-mean">IL12p70 mean<a class="headerlink" href="#il12p70-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL12p70_mean</li>
+<li><strong>Label</strong>: IL12p70 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL12p70 mean, il12p70 mean, IL12p70_mean, il12p70_mean</li>
+</ul>
+<h3 id="il12p70-cv">IL12p70 CV<a class="headerlink" href="#il12p70-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL12p70_cv</li>
+<li><strong>Label</strong>: IL12p70 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL12p70 CV, il12p70 cv, IL12p70_cv, il12p70_cv</li>
+</ul>
+<h3 id="il12p70-date">IL12p70 date<a class="headerlink" href="#il12p70-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL12p70_date</li>
+<li><strong>Label</strong>: IL12p70 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL12p70 date, il12p70 date, IL12p70_date, il12p70_date</li>
+</ul>
+<h3 id="il12p70-plate">IL12p70 plate<a class="headerlink" href="#il12p70-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL12p70_plate</li>
+<li><strong>Label</strong>: IL12p70 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL12p70 plate, il12p70 plate, IL12p70_plate, il12p70_plate</li>
+</ul>
+<h3 id="il13-mean">IL13 mean<a class="headerlink" href="#il13-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL13_mean</li>
+<li><strong>Label</strong>: IL13 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL13 mean, il13 mean, IL13_mean, il13_mean</li>
+</ul>
+<h3 id="il13-cv">IL13 CV<a class="headerlink" href="#il13-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL13_cv</li>
+<li><strong>Label</strong>: IL13 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL13 CV, il13 cv, IL13_cv, il13_cv</li>
+</ul>
+<h3 id="il13-date">IL13 date<a class="headerlink" href="#il13-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL13_date</li>
+<li><strong>Label</strong>: IL13 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL13 date, il13 date, IL13_date, il13_date</li>
+</ul>
+<h3 id="il13-plate">IL13 plate<a class="headerlink" href="#il13-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL13_plate</li>
+<li><strong>Label</strong>: IL13 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL13 plate, il13 plate, IL13_plate, il13_plate</li>
+</ul>
+<h3 id="il18-mean">IL18 mean<a class="headerlink" href="#il18-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL18_mean</li>
+<li><strong>Label</strong>: IL18 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL18 mean, il18 mean, IL18_mean, il18_mean</li>
+</ul>
+<h3 id="il18-cv">IL18 CV<a class="headerlink" href="#il18-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL18_cv</li>
+<li><strong>Label</strong>: IL18 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL18 CV, il18 cv, IL18_cv, il18_cv</li>
+</ul>
+<h3 id="il18-date">IL18 date<a class="headerlink" href="#il18-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL18_date</li>
+<li><strong>Label</strong>: IL18 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL18 date, il18 date, IL18_date, il18_date</li>
+</ul>
+<h3 id="il18-plate">IL18 plate<a class="headerlink" href="#il18-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: IL18_plate</li>
+<li><strong>Label</strong>: IL18 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: IL18 plate, il18 plate, IL18_plate, il18_plate</li>
+</ul>
+<h3 id="trem2-mean">TREM2 mean<a class="headerlink" href="#trem2-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TREM2_mean</li>
+<li><strong>Label</strong>: TREM2 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TREM2 mean, trem2 mean, TREM2_mean, trem2_mean</li>
+</ul>
+<h3 id="trem2-cv">TREM2 CV<a class="headerlink" href="#trem2-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TREM2_cv</li>
+<li><strong>Label</strong>: TREM2 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TREM2 CV, trem2 cv, TREM2_cv, trem2_cv</li>
+</ul>
+<h3 id="trem2-date">TREM2 date<a class="headerlink" href="#trem2-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TREM2_date</li>
+<li><strong>Label</strong>: TREM2 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TREM2 date, trem2 date, TREM2_date, trem2_date</li>
+</ul>
+<h3 id="trem2-plate">TREM2 plate<a class="headerlink" href="#trem2-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TREM2_plate</li>
+<li><strong>Label</strong>: TREM2 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TREM2 plate, trem2 plate, TREM2_plate, trem2_plate</li>
+</ul>
+<h3 id="mmp9-mean">MMP9 mean<a class="headerlink" href="#mmp9-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MMP9_mean</li>
+<li><strong>Label</strong>: MMP9 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MMP9 mean, mmp9 mean, MMP9_mean, mmp9_mean</li>
+</ul>
+<h3 id="mmp9-cv">MMP9 CV<a class="headerlink" href="#mmp9-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MMP9_cv</li>
+<li><strong>Label</strong>: MMP9 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MMP9 CV, mmp9 cv, MMP9_cv, mmp9_cv</li>
+</ul>
+<h3 id="mmp9-date">MMP9 date<a class="headerlink" href="#mmp9-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MMP9_date</li>
+<li><strong>Label</strong>: MMP9 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MMP9 date, mmp9 date, MMP9_date, mmp9_date</li>
+</ul>
+<h3 id="mmp9-plate">MMP9 plate<a class="headerlink" href="#mmp9-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MMP9_plate</li>
+<li><strong>Label</strong>: MMP9 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MMP9 plate, mmp9 plate, MMP9_plate, mmp9_plate</li>
+</ul>
+<h3 id="timp1-mean">TIMP1 mean<a class="headerlink" href="#timp1-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP1_mean</li>
+<li><strong>Label</strong>: TIMP1 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP1 mean, timp1 mean, TIMP1_mean, timp1_mean</li>
+</ul>
+<h3 id="timp1-cv">TIMP1 CV<a class="headerlink" href="#timp1-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP1_cv</li>
+<li><strong>Label</strong>: TIMP1 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP1 CV, timp1 cv, TIMP1_cv, timp1_cv</li>
+</ul>
+<h3 id="timp1-date">TIMP1 date<a class="headerlink" href="#timp1-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP1_date</li>
+<li><strong>Label</strong>: TIMP1 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP1 date, timp1 date, TIMP1_date, timp1_date</li>
+</ul>
+<h3 id="timp1-plate">TIMP1 plate<a class="headerlink" href="#timp1-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP1_plate</li>
+<li><strong>Label</strong>: TIMP1 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP1 plate, timp1 plate, TIMP1_plate, timp1_plate</li>
+</ul>
+<h3 id="bace-mean">BACE mean<a class="headerlink" href="#bace-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: BACE_mean</li>
+<li><strong>Label</strong>: BACE mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: BACE mean, bace mean, BACE_mean, bace_mean</li>
+</ul>
+<h3 id="bace-cv">BACE CV<a class="headerlink" href="#bace-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: BACE_cv</li>
+<li><strong>Label</strong>: BACE CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: BACE CV, bace cv, BACE_cv, bace_cv</li>
+</ul>
+<h3 id="bace-date">BACE date<a class="headerlink" href="#bace-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: BACE_date</li>
+<li><strong>Label</strong>: BACE date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: BACE date, bace date, BACE_date, bace_date</li>
+</ul>
+<h3 id="bace-plate">BACE plate<a class="headerlink" href="#bace-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: BACE_plate</li>
+<li><strong>Label</strong>: BACE plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: BACE plate, bace plate, BACE_plate, bace_plate</li>
+</ul>
+<h3 id="ng-mean">NG mean<a class="headerlink" href="#ng-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: NG_mean</li>
+<li><strong>Label</strong>: NG mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: NG mean, ng mean, NG_mean, ng_mean</li>
+</ul>
+<h3 id="ng-cv">NG CV<a class="headerlink" href="#ng-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: NG_cv</li>
+<li><strong>Label</strong>: NG CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: NG CV, ng cv, NG_cv, ng_cv</li>
+</ul>
+<h3 id="ng-date">NG date<a class="headerlink" href="#ng-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: NG_date</li>
+<li><strong>Label</strong>: NG date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: NG date, ng date, NG_date, ng_date</li>
+</ul>
+<h3 id="ng-plate">NG plate<a class="headerlink" href="#ng-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: NG_plate</li>
+<li><strong>Label</strong>: NG plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: NG plate, ng plate, NG_plate, ng_plate</li>
+</ul>
+<h3 id="msd_ab_38-mean">MSD_AB_38 mean<a class="headerlink" href="#msd_ab_38-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_38_mean</li>
+<li><strong>Label</strong>: MSD_AB_38 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_38 mean, msd_ab_38 mean, MSD AB 38 mean, msd ab 38 mean, MSD_AB_38_mean, msd_ab_38_mean</li>
+</ul>
+<h3 id="msd_ab_38-cv">MSD_AB_38 CV<a class="headerlink" href="#msd_ab_38-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_38_cv</li>
+<li><strong>Label</strong>: MSD_AB_38 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_38 CV, msd_ab_38 cv, MSD AB 38 CV, msd ab 38 cv, MSD_AB_38_cv, msd_ab_38_cv</li>
+</ul>
+<h3 id="msd_ab_date-cv">MSD_AB_date CV<a class="headerlink" href="#msd_ab_date-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_38_date</li>
+<li><strong>Label</strong>: MSD_AB_date CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_date CV, msd_ab_date cv, MSD AB date CV, msd ab date cv, MSD_AB_38_date, msd_ab_38_date</li>
+</ul>
+<h3 id="msd_ab_date-plate">MSD_AB_date plate<a class="headerlink" href="#msd_ab_date-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_38_plate</li>
+<li><strong>Label</strong>: MSD_AB_date plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_date plate, msd_ab_date plate, MSD AB date plate, msd ab date plate, MSD_AB_38_plate, msd_ab_38_plate</li>
+</ul>
+<h3 id="msd_ab_40-mean">MSD_AB_40 mean<a class="headerlink" href="#msd_ab_40-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_40_mean</li>
+<li><strong>Label</strong>: MSD_AB_40 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_40 mean, msd_ab_40 mean, MSD AB 40 mean, msd ab 40 mean, MSD_AB_40_mean, msd_ab_40_mean</li>
+</ul>
+<h3 id="msd_ab_40-cv">MSD_AB_40 CV<a class="headerlink" href="#msd_ab_40-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_40_cv</li>
+<li><strong>Label</strong>: MSD_AB_40 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_40 CV, msd_ab_40 cv, MSD AB 40 CV, msd ab 40 cv, MSD_AB_40_cv, msd_ab_40_cv</li>
+</ul>
+<h3 id="msd_ab_40-date">MSD_AB_40 date<a class="headerlink" href="#msd_ab_40-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_40_date</li>
+<li><strong>Label</strong>: MSD_AB_40 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_40 date, msd_ab_40 date, MSD AB 40 date, msd ab 40 date, MSD_AB_40_date, msd_ab_40_date</li>
+</ul>
+<h3 id="msd_ab_40-plate">MSD_AB_40 plate<a class="headerlink" href="#msd_ab_40-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_40_plate</li>
+<li><strong>Label</strong>: MSD_AB_40 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_40 plate, msd_ab_40 plate, MSD AB 40 plate, msd ab 40 plate, MSD_AB_40_plate, msd_ab_40_plate</li>
+</ul>
+<h3 id="msd_ab_42-mean">MSD_AB_42 mean<a class="headerlink" href="#msd_ab_42-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_42_mean</li>
+<li><strong>Label</strong>: MSD_AB_42 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_42 mean, msd_ab_42 mean, MSD AB 42 mean, msd ab 42 mean, MSD_AB_42_mean, msd_ab_42_mean</li>
+</ul>
+<h3 id="msd_ab_42-cv">MSD_AB_42 CV<a class="headerlink" href="#msd_ab_42-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_42_cv</li>
+<li><strong>Label</strong>: MSD_AB_42 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_42 CV, msd_ab_42 cv, MSD AB 42 CV, msd ab 42 cv, MSD_AB_42_cv, msd_ab_42_cv</li>
+</ul>
+<h3 id="msd_ab_42-date">MSD_AB_42 date<a class="headerlink" href="#msd_ab_42-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_42_date</li>
+<li><strong>Label</strong>: MSD_AB_42 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_42 date, msd_ab_42 date, MSD AB 42 date, msd ab 42 date, MSD_AB_42_date, msd_ab_42_date</li>
+</ul>
+<h3 id="msd_ab_42-plate">MSD_AB_42 plate<a class="headerlink" href="#msd_ab_42-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_AB_42_plate</li>
+<li><strong>Label</strong>: MSD_AB_42 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_AB_42 plate, msd_ab_42 plate, MSD AB 42 plate, msd ab 42 plate, MSD_AB_42_plate, msd_ab_42_plate</li>
+</ul>
+<h3 id="msd_x_34-mean">MSD_X_34 mean<a class="headerlink" href="#msd_x_34-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_34_mean</li>
+<li><strong>Label</strong>: MSD_X_34 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_34 mean, msd_x_34 mean, MSD X 34 mean, msd x 34 mean, MSD_X_34_mean, msd_x_34_mean</li>
+</ul>
+<h3 id="msd_x_34-cv">MSD_X_34 CV<a class="headerlink" href="#msd_x_34-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_34_cv</li>
+<li><strong>Label</strong>: MSD_X_34 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_34 CV, msd_x_34 cv, MSD X 34 CV, msd x 34 cv, MSD_X_34_cv, msd_x_34_cv</li>
+</ul>
+<h3 id="msd_x_34-date">MSD_X_34 date<a class="headerlink" href="#msd_x_34-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_34_date</li>
+<li><strong>Label</strong>: MSD_X_34 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_34 date, msd_x_34 date, MSD X 34 date, msd x 34 date, MSD_X_34_date, msd_x_34_date</li>
+</ul>
+<h3 id="msd_x_34-plate">MSD_X_34 plate<a class="headerlink" href="#msd_x_34-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_34_plate</li>
+<li><strong>Label</strong>: MSD_X_34 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_34 plate, msd_x_34 plate, MSD X 34 plate, msd x 34 plate, MSD_X_34_plate, msd_x_34_plate</li>
+</ul>
+<h3 id="msd_20_x-mean">MSD_20_X mean<a class="headerlink" href="#msd_20_x-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_20_X_mean</li>
+<li><strong>Label</strong>: MSD_20_X mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_20_X mean, msd_20_x mean, MSD 20 X mean, msd 20 x mean, MSD_20_X_mean, msd_20_x_mean</li>
+</ul>
+<h3 id="msd_20_x-cv">MSD_20_X CV<a class="headerlink" href="#msd_20_x-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_20_X_cv</li>
+<li><strong>Label</strong>: MSD_20_X CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_20_X CV, msd_20_x cv, MSD 20 X CV, msd 20 x cv, MSD_20_X_cv, msd_20_x_cv</li>
+</ul>
+<h3 id="msd_20_x-date">MSD_20_X date<a class="headerlink" href="#msd_20_x-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_20_X_date</li>
+<li><strong>Label</strong>: MSD_20_X date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_20_X date, msd_20_x date, MSD 20 X date, msd 20 x date, MSD_20_X_date, msd_20_x_date</li>
+</ul>
+<h3 id="msd_20_x-plate">MSD_20_X plate<a class="headerlink" href="#msd_20_x-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_20_X_plate</li>
+<li><strong>Label</strong>: MSD_20_X plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_20_X plate, msd_20_x plate, MSD 20 X plate, msd 20 x plate, MSD_20_X_plate, msd_20_x_plate</li>
+</ul>
+<h3 id="msd_x_40-mean">MSD_X_40 mean<a class="headerlink" href="#msd_x_40-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_40_mean</li>
+<li><strong>Label</strong>: MSD_X_40 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_40 mean, msd_x_40 mean, MSD X 40 mean, msd x 40 mean, MSD_X_40_mean, msd_x_40_mean</li>
+</ul>
+<h3 id="msd_x_40-cv">MSD_X_40 CV<a class="headerlink" href="#msd_x_40-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_40_cv</li>
+<li><strong>Label</strong>: MSD_X_40 CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_40 CV, msd_x_40 cv, MSD X 40 CV, msd x 40 cv, MSD_X_40_cv, msd_x_40_cv</li>
+</ul>
+<h3 id="msd_x_40-date">MSD_X_40 date<a class="headerlink" href="#msd_x_40-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_40_date</li>
+<li><strong>Label</strong>: MSD_X_40 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_40 date, msd_x_40 date, MSD X 40 date, msd x 40 date, MSD_X_40_date, msd_x_40_date</li>
+</ul>
+<h3 id="msd_x_40-plate">MSD_X_40 plate<a class="headerlink" href="#msd_x_40-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_X_40_plate</li>
+<li><strong>Label</strong>: MSD_X_40 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_X_40 plate, msd_x_40 plate, MSD X 40 plate, msd x 40 plate, MSD_X_40_plate, msd_x_40_plate</li>
+</ul>
+<h3 id="msd_nfl-mean">MSD_NfL mean<a class="headerlink" href="#msd_nfl-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_NfL_mean</li>
+<li><strong>Label</strong>: MSD_NfL mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL mean, msd_nfl mean, MSD NfL mean, msd nfl mean, MSD_NfL_mean, msd_nfl_mean</li>
+</ul>
+<h3 id="msd_nfl-cv">MSD_NfL CV<a class="headerlink" href="#msd_nfl-cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_NfL_cv</li>
+<li><strong>Label</strong>: MSD_NfL CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL CV, msd_nfl cv, MSD NfL CV, msd nfl cv, MSD_NfL_cv, msd_nfl_cv</li>
+</ul>
+<h3 id="msd_nfl-date">MSD_NfL date<a class="headerlink" href="#msd_nfl-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_NfL_date</li>
+<li><strong>Label</strong>: MSD_NfL date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL date, msd_nfl date, MSD NfL date, msd nfl date, MSD_NfL_date, msd_nfl_date</li>
+</ul>
+<h3 id="msd_nfl-plate">MSD_NfL plate<a class="headerlink" href="#msd_nfl-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_NfL_plate</li>
+<li><strong>Label</strong>: MSD_NfL plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL plate, msd_nfl plate, MSD NfL plate, msd nfl plate, MSD_NfL_plate, msd_nfl_plate</li>
+</ul>
+<h3 id="msd_gfap_mean">MSD_GFAP_mean<a class="headerlink" href="#msd_gfap_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_GFAP_mean</li>
+<li><strong>Label</strong>: MSD_GFAP_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_GFAP_mean, msd_gfap_mean, MSD GFAP mean, msd gfap mean</li>
+</ul>
+<h3 id="msd_nfl-cv_1">MSD_NfL CV<a class="headerlink" href="#msd_nfl-cv_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_GFAP_cv</li>
+<li><strong>Label</strong>: MSD_NfL CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL CV, msd_nfl cv, MSD NfL CV, msd nfl cv, MSD_GFAP_cv, msd_gfap_cv</li>
+</ul>
+<h3 id="msd_gfap-date">MSD_GFAP date<a class="headerlink" href="#msd_gfap-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_GFAP_date</li>
+<li><strong>Label</strong>: MSD_GFAP date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_GFAP date, msd_gfap date, MSD GFAP date, msd gfap date, MSD_GFAP_date, msd_gfap_date</li>
+</ul>
+<h3 id="msd_gfap-plate">MSD_GFAP plate<a class="headerlink" href="#msd_gfap-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_GFAP_plate</li>
+<li><strong>Label</strong>: MSD_GFAP plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_GFAP plate, msd_gfap plate, MSD GFAP plate, msd gfap plate, MSD_GFAP_plate, msd_gfap_plate</li>
+</ul>
+<h3 id="msd_pdgfrbeta_mean">MSD_PDGFRBETA_mean<a class="headerlink" href="#msd_pdgfrbeta_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_PDGFRBETA_mean</li>
+<li><strong>Label</strong>: MSD_PDGFRBETA_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_PDGFRBETA_mean, msd_pdgfrbeta_mean, MSD PDGFRBETA mean, msd pdgfrbeta mean</li>
+</ul>
+<h3 id="msd_nfl-cv_2">MSD_NfL CV<a class="headerlink" href="#msd_nfl-cv_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_PDGFRBETA_cv</li>
+<li><strong>Label</strong>: MSD_NfL CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL CV, msd_nfl cv, MSD NfL CV, msd nfl cv, MSD_PDGFRBETA_cv, msd_pdgfrbeta_cv</li>
+</ul>
+<h3 id="msd_pdgfrbeta-date">MSD_PDGFRBETA date<a class="headerlink" href="#msd_pdgfrbeta-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_PDGFRBETA_date</li>
+<li><strong>Label</strong>: MSD_PDGFRBETA date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_PDGFRBETA date, msd_pdgfrbeta date, MSD PDGFRBETA date, msd pdgfrbeta date, MSD_PDGFRBETA_date, msd_pdgfrbeta_date</li>
+</ul>
+<h3 id="msd_pdgfrbeta-plate">MSD_PDGFRBETA plate<a class="headerlink" href="#msd_pdgfrbeta-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_PDGFRBETA_plate</li>
+<li><strong>Label</strong>: MSD_PDGFRBETA plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_PDGFRBETA plate, msd_pdgfrbeta plate, MSD PDGFRBETA plate, msd pdgfrbeta plate, MSD_PDGFRBETA_plate, msd_pdgfrbeta_plate</li>
+</ul>
+<h3 id="msd_mmp2_mean">MSD_MMP2_mean<a class="headerlink" href="#msd_mmp2_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_MMP2_mean</li>
+<li><strong>Label</strong>: MSD_MMP2_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_MMP2_mean, msd_mmp2_mean, MSD MMP2 mean, msd mmp2 mean</li>
+</ul>
+<h3 id="msd_nfl-cv_3">MSD_NfL CV<a class="headerlink" href="#msd_nfl-cv_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_MMP2_cv</li>
+<li><strong>Label</strong>: MSD_NfL CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_NfL CV, msd_nfl cv, MSD NfL CV, msd nfl cv, MSD_MMP2_cv, msd_mmp2_cv</li>
+</ul>
+<h3 id="msd_mmp2-date">MSD_MMP2 date<a class="headerlink" href="#msd_mmp2-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_MMP2_date</li>
+<li><strong>Label</strong>: MSD_MMP2 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_MMP2 date, msd_mmp2 date, MSD MMP2 date, msd mmp2 date, MSD_MMP2_date, msd_mmp2_date</li>
+</ul>
+<h3 id="msd_mmp2-plate">MSD_MMP2 plate<a class="headerlink" href="#msd_mmp2-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: MSD_MMP2_plate</li>
+<li><strong>Label</strong>: MSD_MMP2 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: MSD_MMP2 plate, msd_mmp2 plate, MSD MMP2 plate, msd mmp2 plate, MSD_MMP2_plate, msd_mmp2_plate</li>
+</ul>
+<h3 id="vegf_c-mean">VEGF_C mean<a class="headerlink" href="#vegf_c-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_mean</li>
+<li><strong>Label</strong>: VEGF_C mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C mean, vegf_c mean, VEGF C mean, vegf c mean, VEGF_C_mean, vegf_c_mean</li>
+</ul>
+<h3 id="vegf_c-date">VEGF_C date<a class="headerlink" href="#vegf_c-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_date</li>
+<li><strong>Label</strong>: VEGF_C date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C date, vegf_c date, VEGF C date, vegf c date, VEGF_C_date, vegf_c_date</li>
+</ul>
+<h3 id="vegf_c-plate">VEGF_C plate<a class="headerlink" href="#vegf_c-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_plate</li>
+<li><strong>Label</strong>: VEGF_C plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C plate, vegf_c plate, VEGF C plate, vegf c plate, VEGF_C_plate, vegf_c_plate</li>
+</ul>
+<h3 id="vegf_a-mean">VEGF_A mean<a class="headerlink" href="#vegf_a-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_mean</li>
+<li><strong>Label</strong>: VEGF_A mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A mean, vegf_a mean, VEGF A mean, vegf a mean, VEGF_A_mean, vegf_a_mean</li>
+</ul>
+<h3 id="vegf_a-date">VEGF_A date<a class="headerlink" href="#vegf_a-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_date</li>
+<li><strong>Label</strong>: VEGF_A date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A date, vegf_a date, VEGF A date, vegf a date, VEGF_A_date, vegf_a_date</li>
+</ul>
+<h3 id="vegf_a-plate">VEGF_A plate<a class="headerlink" href="#vegf_a-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_plate</li>
+<li><strong>Label</strong>: VEGF_A plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A plate, vegf_a plate, VEGF A plate, vegf a plate, VEGF_A_plate, vegf_a_plate</li>
+</ul>
+<h3 id="plgf-mean">PlGF mean<a class="headerlink" href="#plgf-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_mean</li>
+<li><strong>Label</strong>: PlGF mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF mean, plgf mean, PlGF_mean, plgf_mean</li>
+</ul>
+<h3 id="plgf-date">PlGF date<a class="headerlink" href="#plgf-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_date</li>
+<li><strong>Label</strong>: PlGF date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF date, plgf date, PlGF_date, plgf_date</li>
+</ul>
+<h3 id="plgf-plate">PlGF plate<a class="headerlink" href="#plgf-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_plate</li>
+<li><strong>Label</strong>: PlGF plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF plate, plgf plate, PlGF_plate, plgf_plate</li>
+</ul>
+<h3 id="alpha-2-macroglobulin-mean">alpha-2-macroglobulin mean<a class="headerlink" href="#alpha-2-macroglobulin-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: alpha2M_mean</li>
+<li><strong>Label</strong>: alpha-2-macroglobulin mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: alpha-2-macroglobulin mean, alpha2M_mean, alpha2m_mean</li>
+</ul>
+<h3 id="alpha-2-macroglobulin-date">alpha-2-macroglobulin date<a class="headerlink" href="#alpha-2-macroglobulin-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: alpha2M_date</li>
+<li><strong>Label</strong>: alpha-2-macroglobulin date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: alpha-2-macroglobulin date, alpha2M_date, alpha2m_date</li>
+</ul>
+<h3 id="alpha-2-macroglobulin-plate">alpha-2-macroglobulin plate<a class="headerlink" href="#alpha-2-macroglobulin-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: alpha2M_plate</li>
+<li><strong>Label</strong>: alpha-2-macroglobulin plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: alpha2M_plate, alpha2m_plate, alpha2m plate, Alpha2M Plate, ALPHA2M_PLATE</li>
+</ul>
+<h3 id="timp-2-mean">TIMP-2 mean<a class="headerlink" href="#timp-2-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP2_mean</li>
+<li><strong>Label</strong>: TIMP-2 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP-2 mean, timp-2 mean, TIMP2_mean, timp2_mean</li>
+</ul>
+<h3 id="timp-2-date">TIMP-2 date<a class="headerlink" href="#timp-2-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP2_date</li>
+<li><strong>Label</strong>: TIMP-2 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP-2 date, timp-2 date, TIMP2_date, timp2_date</li>
+</ul>
+<h3 id="timp-2-plate">TIMP-2 plate<a class="headerlink" href="#timp-2-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: TIMP2_plate</li>
+<li><strong>Label</strong>: TIMP-2 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: TIMP2_plate, timp2_plate, timp2 plate, Timp2 Plate, TIMP2_PLATE</li>
+</ul>
+<h3 id="tyro3-mean">Tyro3 mean<a class="headerlink" href="#tyro3-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: tyro3_mean</li>
+<li><strong>Label</strong>: Tyro3 mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Tyro3 mean, tyro3 mean, tyro3_mean</li>
+</ul>
+<h3 id="tyro3-date">Tyro3 date<a class="headerlink" href="#tyro3-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: tyro3_date</li>
+<li><strong>Label</strong>: Tyro3 date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Tyro3 date, tyro3 date, tyro3_date</li>
+</ul>
+<h3 id="tyro3-plate">Tyro3 plate<a class="headerlink" href="#tyro3-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: tyro3_plate</li>
+<li><strong>Label</strong>: Tyro3 plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Tyro3 plate, tyro3 plate, tyro3_plate</li>
+</ul>
+<h3 id="axl-mean">Axl mean<a class="headerlink" href="#axl-mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: axl_mean</li>
+<li><strong>Label</strong>: Axl mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Axl mean, axl mean, axl_mean</li>
+</ul>
+<h3 id="axl-date">Axl date<a class="headerlink" href="#axl-date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: axl_date</li>
+<li><strong>Label</strong>: Axl date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Axl date, axl date, axl_date</li>
+</ul>
+<h3 id="axl-plate">Axl plate<a class="headerlink" href="#axl-plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: axl_plate</li>
+<li><strong>Label</strong>: Axl plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Axl plate, axl plate, axl_plate</li>
+</ul>
+<h3 id="ugot_bd_tau_carboxylated_csf_mean">UGOT_BD_Tau_carboxylated_csf_mean<a class="headerlink" href="#ugot_bd_tau_carboxylated_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_BD_Tau_carboxylated_csf_mean</li>
+<li><strong>Label</strong>: UGOT_BD_Tau_carboxylated_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_BD_Tau_carboxylated_csf_mean, ugot_bd_tau_carboxylated_csf_mean, UGOT BD Tau carboxylated csf mean, ugot bd tau carboxylated csf mean</li>
+</ul>
+<h3 id="ugot_p181_carboxylated_csf_mean">UGOT_p181_carboxylated_csf_mean<a class="headerlink" href="#ugot_p181_carboxylated_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p181_carboxylated_csf_mean</li>
+<li><strong>Label</strong>: UGOT_p181_carboxylated_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p181_carboxylated_csf_mean, ugot_p181_carboxylated_csf_mean, UGOT p181 carboxylated csf mean, ugot p181 carboxylated csf mean</li>
+</ul>
+<h3 id="ugot_p181_dyed_csf_mean">UGOT_p181_dyed_csf_mean<a class="headerlink" href="#ugot_p181_dyed_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p181_dyed_csf_mean</li>
+<li><strong>Label</strong>: UGOT_p181_dyed_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p181_dyed_csf_mean, ugot_p181_dyed_csf_mean, UGOT p181 dyed csf mean, ugot p181 dyed csf mean</li>
+</ul>
+<h3 id="ugot_p231_carboxylated_csf_mean">UGOT_p231_carboxylated_csf_mean<a class="headerlink" href="#ugot_p231_carboxylated_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p231_carboxylated_csf_mean</li>
+<li><strong>Label</strong>: UGOT_p231_carboxylated_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p231_carboxylated_csf_mean, ugot_p231_carboxylated_csf_mean, UGOT p231 carboxylated csf mean, ugot p231 carboxylated csf mean</li>
+</ul>
+<h3 id="ugot_p231_dyed_csf_mean">UGOT_p231_dyed_csf_mean<a class="headerlink" href="#ugot_p231_dyed_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p231_dyed_csf_mean</li>
+<li><strong>Label</strong>: UGOT_p231_dyed_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p231_dyed_csf_mean, ugot_p231_dyed_csf_mean, UGOT p231 dyed csf mean, ugot p231 dyed csf mean</li>
+</ul>
+<h3 id="ugot_p217_csf_mean">UGOT_p217_csf_mean<a class="headerlink" href="#ugot_p217_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p217_csf_mean</li>
+<li><strong>Label</strong>: UGOT_p217_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p217_csf_mean, ugot_p217_csf_mean, UGOT p217 csf mean, ugot p217 csf mean</li>
+</ul>
+<h3 id="ugot_gap43_csf_mean">UGOT_GAP43_csf_mean<a class="headerlink" href="#ugot_gap43_csf_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_GAP43_csf_mean</li>
+<li><strong>Label</strong>: UGOT_GAP43_csf_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_GAP43_csf_mean, ugot_gap43_csf_mean, UGOT GAP43 csf mean, ugot gap43 csf mean</li>
+</ul>
+<h3 id="ugot_nptx1_mean">UGOT_NPTX1_mean<a class="headerlink" href="#ugot_nptx1_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_NPTX1_mean</li>
+<li><strong>Label</strong>: UGOT_NPTX1_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_NPTX1_mean, ugot_nptx1_mean, UGOT NPTX1 mean, ugot nptx1 mean</li>
+</ul>
+<h3 id="ugot_nptxr_mean">UGOT_NPTXR_mean<a class="headerlink" href="#ugot_nptxr_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_NPTXR_mean</li>
+<li><strong>Label</strong>: UGOT_NPTXR_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_NPTXR_mean, ugot_nptxr_mean, UGOT NPTXR mean, ugot nptxr mean</li>
+</ul>
+<h3 id="ratio-4240">Ratio 42/40<a class="headerlink" href="#ratio-4240" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: ratio_42_40</li>
+<li><strong>Label</strong>: Ratio 42/40</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Ratio 42/40, ratio 42/40, ratio_42_40</li>
+</ul>
+<h3 id="abeta-cutoff">Abeta cutoff<a class="headerlink" href="#abeta-cutoff" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: abeta_cutoff</li>
+<li><strong>Label</strong>: Abeta cutoff</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Abeta cutoff, abeta cutoff, abeta_cutoff</li>
+</ul>
+<h3 id="a_hierarchical">A_hierarchical<a class="headerlink" href="#a_hierarchical" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: a_hierarchical</li>
+<li><strong>Label</strong>: A_hierarchical</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: @amypet_conclu, 1, 0</li>
+<li><strong>Synonyms</strong>: A_hierarchical, a_hierarchical, A hierarchical, a hierarchical</li>
+</ul>
+<h3 id="a_ratio">A_ratio<a class="headerlink" href="#a_ratio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: a</li>
+<li><strong>Label</strong>: A_ratio</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: 1, 0</li>
+<li><strong>Synonyms</strong>: A_ratio, a_ratio, A ratio, a ratio, a</li>
+</ul>
+<h3 id="a_ratio_1">A_ratio<a class="headerlink" href="#a_ratio_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: a_ratio</li>
+<li><strong>Label</strong>: A_ratio</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: 1, 0</li>
+<li><strong>Synonyms</strong>: A_ratio, a_ratio, A ratio, a ratio</li>
+</ul>
+<h3 id="a_innotest">A_innotest<a class="headerlink" href="#a_innotest" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: a_inno</li>
+<li><strong>Label</strong>: A_innotest</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: 1, 0</li>
+<li><strong>Synonyms</strong>: A_innotest, a_innotest, A innotest, a innotest, a_inno</li>
+</ul>
+<h3 id="t">T<a class="headerlink" href="#t" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: t</li>
+<li><strong>Label</strong>: T</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: 1, 0</li>
+<li><strong>Synonyms</strong>: T, t</li>
+</ul>
+<h3 id="n">N<a class="headerlink" href="#n" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: n</li>
+<li><strong>Label</strong>: N</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: 1, 0</li>
+<li><strong>Synonyms</strong>: N, n</li>
+</ul>
+<h3 id="atn">ATN<a class="headerlink" href="#atn" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: atn</li>
+<li><strong>Label</strong>: ATN</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: +, u, -</li>
+<li><strong>Synonyms</strong>: ATN, atn, Atn</li>
+</ul>
+<h3 id="atn_amypet">ATN_amypet<a class="headerlink" href="#atn_amypet" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: atn_amypet</li>
+<li><strong>Label</strong>: ATN_amypet</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: +, u, -</li>
+<li><strong>Synonyms</strong>: ATN_amypet, atn_amypet, ATN amypet, atn amypet</li>
+</ul>
+<h3 id="atn-innotest">ATN Innotest<a class="headerlink" href="#atn-innotest" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: atn_inno</li>
+<li><strong>Label</strong>: ATN Innotest</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: +, u, -</li>
+<li><strong>Synonyms</strong>: ATN Innotest, atn innotest, atn_inno</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

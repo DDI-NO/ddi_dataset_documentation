@@ -1,0 +1,3535 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Generated documentation for DDI datasets">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Biochemistry - DDI Dataset Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DDI Dataset Documentation" class="md-header__button md-logo" aria-label="DDI Dataset Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DDI Dataset Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Biochemistry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Experiments
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../dataset/_intro/" class="md-tabs__link">
+          
+  
+  
+  Dataset
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DDI Dataset Documentation" class="md-nav__button md-logo" aria-label="DDI Dataset Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DDI Dataset Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Experiments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dataset
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dataset
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dataset/_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dataset/variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blood-biomarkers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blood Biomarkers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blood Biomarkers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#label" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Label
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Age
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-hemoglobin-gdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Hemoglobin g/dL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-hemoglobin-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Hemoglobin within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-hematocrit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Hematocrit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-hematocrit-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Hematocrit within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-sr-mmhour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-SR mm/hour
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-sr-mmhour-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-SR mm/hour within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-leukocytes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Leukocytes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-leukocytes-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Leukocytes within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-diffcount-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-Diff.count within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ferritin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Ferritin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ferritin-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Ferritin within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-crp-mgl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-CRP (mg/L)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-crp-mgl-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-CRP (mg/L) within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-vitamin-b12-pmoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Vitamin B12 (pmol/L)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-vitamin-b12-pmoll-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Vitamin B12 (pmol/L) within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-folat-nmoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Folat nmol/L
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-folat-nmoll-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Folat nmol/L within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-homocystein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Homocystein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-homocystein-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Homocystein within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-mma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-MMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-mma-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-MMA within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-glucose-mmoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Glucose mmol/L
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-glucose-mmoll-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Glucose mmol/L within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-hba1c-percentage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-HbA1C percentage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-hba1c-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-HbA1C within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-na" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Na
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-na-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Na within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-K
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-k-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-K within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ca-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Ca, total
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ca-total-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Ca, total within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ca-albumin-corrected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Ca, albumin corrected
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ca-albumin-corrected-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Ca, albumin corrected within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-kreatinin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Kreatinin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-kreatinin-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Kreatinin within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfr-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFR within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-alat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-ALAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-alat-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-ALAT within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-alp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-ALP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-alp-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-ALP within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-probnp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-proBNP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-probnp-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-proBNP within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-cholesterol-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Cholesterol, total
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-cholesterol-total-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Cholesterol, total within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-hdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-HDL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-hdl-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-HDL within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-triglycerides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Triglycerides
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-triglycerides-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Triglycerides within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ldl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-LDL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ldl-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-LDL within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-albumin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Albumin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-albumin-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Albumin within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ft4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-fT4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-ft4-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-fT4 within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-tsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-TSH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-tsh-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-TSH within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-vitamin-d-25-oh-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Vitamin D 25-OH-D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-vitamin-d-25-oh-d-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Vitamin D 25-OH-D within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-vitamin-d-125-oh2-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Vitamin D 1,25-OH2-D
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-vitamin-d-125-oh2-d-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S-Vitamin D 1,25-OH2-D within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CDT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdt-within-normal-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CDT within normal value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-apoe-genotype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B-ApoE-genotype
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_34_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_34_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_34_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_34_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_34_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_34_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_34_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_34_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_20_x_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_20_x_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_20_x_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_20_x_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_20_x_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_20_x_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_20_x_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_20_x_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_40_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_40_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_40_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_40_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_40_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_40_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_x_40_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_x_40_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_nfl_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_nfl_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_nfl_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_nfl_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_nfl_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_nfl_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_nfl_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_nfl_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_ptau181_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_pTau181_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_ptau181_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_pTau181_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_ptau181_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_pTau181_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simoa_ptau181_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simoa_pTau181_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plgf_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PlGF_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_c_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_C_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a_plasma_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A_plasma_CV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a_plasma_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A_plasma_date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vegf_a_plasma_plate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VEGF_A_plasma_plate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p217_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p217_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_nfl_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_NfL_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_bd_tau_carboxylated_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_BD_Tau_carboxylated_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_bd_tau_dyed_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_BD_Tau_dyed_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p181_carboxylated_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p181_carboxylated_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p181_dyed_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p181_dyed_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_p231_carboxylated_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_p231_carboxylated_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ugot_gfap_plasma_mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UGOT_GFAP_plasma_mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Blood Biochemistry data</p>
+<h1 id="blood-biomarkers">Blood Biomarkers<a class="headerlink" href="#blood-biomarkers" title="Permanent link">&para;</a></h1>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Label</th>
+<th>Definition</th>
+<th>Level</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LABEL</td>
+<td>Label</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>Date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>Age</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Bl_Hb</td>
+<td>B-Hemoglobin g/dL</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HbNorm</td>
+<td>B-Hemoglobin within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Hct</td>
+<td>B-Hematocrit</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HctNorm</td>
+<td>B-Hematocrit within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_SR</td>
+<td>B-SR mm/hour</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_SRNorm</td>
+<td>B-SR mm/hour within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Leukoc</td>
+<td>B-Leukocytes</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_LeukocNorm</td>
+<td>B-Leukocytes within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_DiffNorm</td>
+<td>B-Diff.count within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Ferritin</td>
+<td>S-Ferritin</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_FerritinNorm</td>
+<td>S-Ferritin within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_CRP</td>
+<td>S-CRP (mg/L)</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_CRPNorm</td>
+<td>S-CRP (mg/L) within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_VitB12</td>
+<td>S-Vitamin B12 (pmol/L)</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_VitB12Norm</td>
+<td>S-Vitamin B12 (pmol/L) within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Folat</td>
+<td>S-Folat nmol/L</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_FolatNorm</td>
+<td>S-Folat nmol/L within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Homocyst</td>
+<td>S-Homocystein</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HomocystNorm</td>
+<td>S-Homocystein within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_MMA</td>
+<td>S-MMA</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_MMANorm</td>
+<td>S-MMA within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Glu</td>
+<td>S-Glucose mmol/L</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_GluNorm</td>
+<td>S-Glucose mmol/L within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HbA1c</td>
+<td>B-HbA1C percentage</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HbA1cNorm</td>
+<td>B-HbA1C within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Na</td>
+<td>S-Na</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_NaNorm</td>
+<td>S-Na within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_K</td>
+<td>S-K</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_KNorm</td>
+<td>S-K within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_TotalCa</td>
+<td>S-Ca, total</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Bl_TotalCaNorm</td>
+<td>S-Ca, total within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>Bl_AlbcorrCa</td>
+<td>S-Ca, albumin corrected</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_AlbcorrCaNorm</td>
+<td>S-Ca, albumin corrected within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Kreatinin</td>
+<td>S-Kreatinin</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_KreatininNorm</td>
+<td>S-Kreatinin within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_GFR</td>
+<td>GFR</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_GFRNorm</td>
+<td>GFR within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_ALAT</td>
+<td>S-ALAT</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_ALATNorm</td>
+<td>S-ALAT within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_ALP</td>
+<td>S-ALP</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_ALPNorm</td>
+<td>S-ALP within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_proBNP</td>
+<td>S-proBNP</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_proBNPNorm</td>
+<td>S-proBNP within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_TotChol</td>
+<td>S-Cholesterol, total</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_TotCholNorm</td>
+<td>S-Cholesterol, total within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HDL</td>
+<td>S-HDL</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_HDLNorm</td>
+<td>S-HDL within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Triglys</td>
+<td>S-Triglycerides</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_TriglysNorm</td>
+<td>S-Triglycerides within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_LDL</td>
+<td>S-LDL</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_LDLNorm</td>
+<td>S-LDL within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_Albumin</td>
+<td>S-Albumin</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_AlbuminNorm</td>
+<td>S-Albumin within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_fT4</td>
+<td>S-fT4</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_fT4Norm</td>
+<td>S-fT4 within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_TSH</td>
+<td>S-TSH</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_TSHNorm</td>
+<td>S-TSH within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_VitD</td>
+<td>S-Vitamin D 25-OH-D</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_VitDNorm</td>
+<td>S-Vitamin D 25-OH-D within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_VitD1_25</td>
+<td>S-Vitamin D 1,25-OH2-D</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_VitD1_25Norm</td>
+<td>S-Vitamin D 1,25-OH2-D within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_CDT</td>
+<td>CDT</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_CDTNorm</td>
+<td>CDT within normal value</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Bl_ApoE</td>
+<td>B-ApoE-genotype</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>simoa_x_34_plasma_mean</td>
+<td>simoa_x_34_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_x_34_plasma_cv</td>
+<td>simoa_x_34_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_x_34_plasma_date</td>
+<td>simoa_x_34_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>simoa_x_34_plasma_plate</td>
+<td>simoa_x_34_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>simoa_20_x_plasma_mean</td>
+<td>simoa_20_x_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_20_x_plasma_cv</td>
+<td>simoa_20_x_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_20_x_plasma_date</td>
+<td>simoa_20_x_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>simoa_20_x_plasma_plate</td>
+<td>simoa_20_x_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>simoa_x_40_plasma_mean</td>
+<td>simoa_x_40_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_x_40_plasma_cv</td>
+<td>simoa_x_40_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_x_40_plasma_date</td>
+<td>simoa_x_40_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>simoa_x_40_plasma_plate</td>
+<td>simoa_x_40_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>simoa_nfl_plasma_mean</td>
+<td>simoa_nfl_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_nfl_plasma_cv</td>
+<td>simoa_nfl_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_nfl_plasma_date</td>
+<td>simoa_nfl_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>simoa_nfl_plasma_plate</td>
+<td>simoa_nfl_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>simoa_pTau181_plasma_mean</td>
+<td>simoa_pTau181_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_pTau181_plasma_cv</td>
+<td>simoa_pTau181_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>simoa_pTau181_plasma_date</td>
+<td>simoa_pTau181_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>simoa_pTau181_plasma_plate</td>
+<td>simoa_pTau181_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>PlGF_plasma_mean</td>
+<td>PlGF_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>PlGF_plasma_cv</td>
+<td>PlGF_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>PlGF_plasma_date</td>
+<td>PlGF_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>PlGF_plasma_plate</td>
+<td>PlGF_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>VEGF_C_plasma_mean</td>
+<td>VEGF_C_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>VEGF_C_plasma_cv</td>
+<td>VEGF_C_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>VEGF_C_plasma_date</td>
+<td>VEGF_C_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>VEGF_C_plasma_plate</td>
+<td>VEGF_C_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>VEGF_A_plasma_mean</td>
+<td>VEGF_A_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>VEGF_A_plasma_cv</td>
+<td>VEGF_A_plasma_CV</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>VEGF_A_plasma_date</td>
+<td>VEGF_A_plasma_date</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>date</td>
+</tr>
+<tr>
+<td>VEGF_A_plasma_plate</td>
+<td>VEGF_A_plasma_plate</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>text</td>
+</tr>
+<tr>
+<td>UGOT_p217_plasma_mean</td>
+<td>UGOT_p217_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_NfL_plasma_mean</td>
+<td>UGOT_NfL_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_BD_Tau_carboxylated_plasma_mean</td>
+<td>UGOT_BD_Tau_carboxylated_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_BD_Tau_dyed_plasma_mean</td>
+<td>UGOT_BD_Tau_dyed_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p181_carboxylated_plasma_mean</td>
+<td>UGOT_p181_carboxylated_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p181_dyed_plasma_mean</td>
+<td>UGOT_p181_dyed_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_p231_carboxylated_plasma_mean</td>
+<td>UGOT_p231_carboxylated_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+<tr>
+<td>UGOT_GFAP_plasma_mean</td>
+<td>UGOT_GFAP_plasma_mean</td>
+<td>TODO: Define semantic meaning.</td>
+<td>visit</td>
+<td>numeric</td>
+</tr>
+</tbody>
+</table>
+<h3 id="label">Label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: LABEL</li>
+<li><strong>Label</strong>: Label</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Label, label, LABEL</li>
+</ul>
+<h3 id="date">Date<a class="headerlink" href="#date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: DATE</li>
+<li><strong>Label</strong>: Date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Date, date, DATE</li>
+</ul>
+<h3 id="age">Age<a class="headerlink" href="#age" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: AGE</li>
+<li><strong>Label</strong>: Age</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: Age, age, AGE</li>
+</ul>
+<h3 id="b-hemoglobin-gdl">B-Hemoglobin g/dL<a class="headerlink" href="#b-hemoglobin-gdl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Hb</li>
+<li><strong>Label</strong>: B-Hemoglobin g/dL</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Hemoglobin g/dL, b-hemoglobin g/dl, Bl_Hb, bl_hb</li>
+</ul>
+<h3 id="b-hemoglobin-within-normal-value">B-Hemoglobin within normal value<a class="headerlink" href="#b-hemoglobin-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HbNorm</li>
+<li><strong>Label</strong>: B-Hemoglobin within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Hemoglobin within normal value, b-hemoglobin within normal value, Bl_HbNorm, bl_hbnorm</li>
+</ul>
+<h3 id="b-hematocrit">B-Hematocrit<a class="headerlink" href="#b-hematocrit" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Hct</li>
+<li><strong>Label</strong>: B-Hematocrit</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Hematocrit, b-hematocrit, Bl_Hct, bl_hct</li>
+</ul>
+<h3 id="b-hematocrit-within-normal-value">B-Hematocrit within normal value<a class="headerlink" href="#b-hematocrit-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HctNorm</li>
+<li><strong>Label</strong>: B-Hematocrit within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Hematocrit within normal value, b-hematocrit within normal value, Bl_HctNorm, bl_hctnorm</li>
+</ul>
+<h3 id="b-sr-mmhour">B-SR mm/hour<a class="headerlink" href="#b-sr-mmhour" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_SR</li>
+<li><strong>Label</strong>: B-SR mm/hour</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-SR mm/hour, b-sr mm/hour, Bl_SR, bl_sr</li>
+</ul>
+<h3 id="b-sr-mmhour-within-normal-value">B-SR mm/hour within normal value<a class="headerlink" href="#b-sr-mmhour-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_SRNorm</li>
+<li><strong>Label</strong>: B-SR mm/hour within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-SR mm/hour within normal value, b-sr mm/hour within normal value, Bl_SRNorm, bl_srnorm</li>
+</ul>
+<h3 id="b-leukocytes">B-Leukocytes<a class="headerlink" href="#b-leukocytes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Leukoc</li>
+<li><strong>Label</strong>: B-Leukocytes</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Leukocytes, b-leukocytes, Bl_Leukoc, bl_leukoc</li>
+</ul>
+<h3 id="b-leukocytes-within-normal-value">B-Leukocytes within normal value<a class="headerlink" href="#b-leukocytes-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_LeukocNorm</li>
+<li><strong>Label</strong>: B-Leukocytes within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Leukocytes within normal value, b-leukocytes within normal value, Bl_LeukocNorm, bl_leukocnorm</li>
+</ul>
+<h3 id="b-diffcount-within-normal-value">B-Diff.count within normal value<a class="headerlink" href="#b-diffcount-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_DiffNorm</li>
+<li><strong>Label</strong>: B-Diff.count within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-Diff.count within normal value, b-diff.count within normal value, Bl_DiffNorm, bl_diffnorm</li>
+</ul>
+<h3 id="s-ferritin">S-Ferritin<a class="headerlink" href="#s-ferritin" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Ferritin</li>
+<li><strong>Label</strong>: S-Ferritin</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Ferritin, s-ferritin, Bl_Ferritin, bl_ferritin</li>
+</ul>
+<h3 id="s-ferritin-within-normal-value">S-Ferritin within normal value<a class="headerlink" href="#s-ferritin-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_FerritinNorm</li>
+<li><strong>Label</strong>: S-Ferritin within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Ferritin within normal value, s-ferritin within normal value, Bl_FerritinNorm, bl_ferritinnorm</li>
+</ul>
+<h3 id="s-crp-mgl">S-CRP (mg/L)<a class="headerlink" href="#s-crp-mgl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_CRP</li>
+<li><strong>Label</strong>: S-CRP (mg/L)</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-CRP (mg/L), s-crp (mg/l), Bl_CRP, bl_crp</li>
+</ul>
+<h3 id="s-crp-mgl-within-normal-value">S-CRP (mg/L) within normal value<a class="headerlink" href="#s-crp-mgl-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_CRPNorm</li>
+<li><strong>Label</strong>: S-CRP (mg/L) within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-CRP (mg/L) within normal value, s-crp (mg/l) within normal value, Bl_CRPNorm, bl_crpnorm</li>
+</ul>
+<h3 id="s-vitamin-b12-pmoll">S-Vitamin B12 (pmol/L)<a class="headerlink" href="#s-vitamin-b12-pmoll" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_VitB12</li>
+<li><strong>Label</strong>: S-Vitamin B12 (pmol/L)</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Vitamin B12 (pmol/L), s-vitamin b12 (pmol/l), Bl_VitB12, bl_vitb12</li>
+</ul>
+<h3 id="s-vitamin-b12-pmoll-within-normal-value">S-Vitamin B12 (pmol/L) within normal value<a class="headerlink" href="#s-vitamin-b12-pmoll-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_VitB12Norm</li>
+<li><strong>Label</strong>: S-Vitamin B12 (pmol/L) within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Vitamin B12 (pmol/L) within normal value, s-vitamin b12 (pmol/l) within normal value, Bl_VitB12Norm, bl_vitb12norm</li>
+</ul>
+<h3 id="s-folat-nmoll">S-Folat nmol/L<a class="headerlink" href="#s-folat-nmoll" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Folat</li>
+<li><strong>Label</strong>: S-Folat nmol/L</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Folat nmol/L, s-folat nmol/l, Bl_Folat, bl_folat</li>
+</ul>
+<h3 id="s-folat-nmoll-within-normal-value">S-Folat nmol/L within normal value<a class="headerlink" href="#s-folat-nmoll-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_FolatNorm</li>
+<li><strong>Label</strong>: S-Folat nmol/L within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Folat nmol/L within normal value, s-folat nmol/l within normal value, Bl_FolatNorm, bl_folatnorm</li>
+</ul>
+<h3 id="s-homocystein">S-Homocystein<a class="headerlink" href="#s-homocystein" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Homocyst</li>
+<li><strong>Label</strong>: S-Homocystein</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Homocystein, s-homocystein, Bl_Homocyst, bl_homocyst</li>
+</ul>
+<h3 id="s-homocystein-within-normal-value">S-Homocystein within normal value<a class="headerlink" href="#s-homocystein-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HomocystNorm</li>
+<li><strong>Label</strong>: S-Homocystein within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Homocystein within normal value, s-homocystein within normal value, Bl_HomocystNorm, bl_homocystnorm</li>
+</ul>
+<h3 id="s-mma">S-MMA<a class="headerlink" href="#s-mma" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_MMA</li>
+<li><strong>Label</strong>: S-MMA</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-MMA, s-mma, Bl_MMA, bl_mma</li>
+</ul>
+<h3 id="s-mma-within-normal-value">S-MMA within normal value<a class="headerlink" href="#s-mma-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_MMANorm</li>
+<li><strong>Label</strong>: S-MMA within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-MMA within normal value, s-mma within normal value, Bl_MMANorm, bl_mmanorm</li>
+</ul>
+<h3 id="s-glucose-mmoll">S-Glucose mmol/L<a class="headerlink" href="#s-glucose-mmoll" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Glu</li>
+<li><strong>Label</strong>: S-Glucose mmol/L</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Glucose mmol/L, s-glucose mmol/l, Bl_Glu, bl_glu</li>
+</ul>
+<h3 id="s-glucose-mmoll-within-normal-value">S-Glucose mmol/L within normal value<a class="headerlink" href="#s-glucose-mmoll-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_GluNorm</li>
+<li><strong>Label</strong>: S-Glucose mmol/L within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Glucose mmol/L within normal value, s-glucose mmol/l within normal value, Bl_GluNorm, bl_glunorm</li>
+</ul>
+<h3 id="b-hba1c-percentage">B-HbA1C percentage<a class="headerlink" href="#b-hba1c-percentage" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HbA1c</li>
+<li><strong>Label</strong>: B-HbA1C percentage</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-HbA1C percentage, b-hba1c percentage, Bl_HbA1c, bl_hba1c</li>
+</ul>
+<h3 id="b-hba1c-within-normal-value">B-HbA1C within normal value<a class="headerlink" href="#b-hba1c-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HbA1cNorm</li>
+<li><strong>Label</strong>: B-HbA1C within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-HbA1C within normal value, b-hba1c within normal value, Bl_HbA1cNorm, bl_hba1cnorm</li>
+</ul>
+<h3 id="s-na">S-Na<a class="headerlink" href="#s-na" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Na</li>
+<li><strong>Label</strong>: S-Na</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Na, s-na, Bl_Na, bl_na</li>
+</ul>
+<h3 id="s-na-within-normal-value">S-Na within normal value<a class="headerlink" href="#s-na-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_NaNorm</li>
+<li><strong>Label</strong>: S-Na within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Na within normal value, s-na within normal value, Bl_NaNorm, bl_nanorm</li>
+</ul>
+<h3 id="s-k">S-K<a class="headerlink" href="#s-k" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_K</li>
+<li><strong>Label</strong>: S-K</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-K, s-k, Bl_K, bl_k</li>
+</ul>
+<h3 id="s-k-within-normal-value">S-K within normal value<a class="headerlink" href="#s-k-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_KNorm</li>
+<li><strong>Label</strong>: S-K within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-K within normal value, s-k within normal value, Bl_KNorm, bl_knorm</li>
+</ul>
+<h3 id="s-ca-total">S-Ca, total<a class="headerlink" href="#s-ca-total" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TotalCa</li>
+<li><strong>Label</strong>: S-Ca, total</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Ca, total, s-ca, total, Bl_TotalCa, bl_totalca</li>
+</ul>
+<h3 id="s-ca-total-within-normal-value">S-Ca, total within normal value<a class="headerlink" href="#s-ca-total-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TotalCaNorm</li>
+<li><strong>Label</strong>: S-Ca, total within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Ca, total within normal value, s-ca, total within normal value, Bl_TotalCaNorm, bl_totalcanorm</li>
+</ul>
+<h3 id="s-ca-albumin-corrected">S-Ca, albumin corrected<a class="headerlink" href="#s-ca-albumin-corrected" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_AlbcorrCa</li>
+<li><strong>Label</strong>: S-Ca, albumin corrected</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Ca, albumin corrected, s-ca, albumin corrected, Bl_AlbcorrCa, bl_albcorrca</li>
+</ul>
+<h3 id="s-ca-albumin-corrected-within-normal-value">S-Ca, albumin corrected within normal value<a class="headerlink" href="#s-ca-albumin-corrected-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_AlbcorrCaNorm</li>
+<li><strong>Label</strong>: S-Ca, albumin corrected within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Ca, albumin corrected within normal value, s-ca, albumin corrected within normal value, Bl_AlbcorrCaNorm, bl_albcorrcanorm</li>
+</ul>
+<h3 id="s-kreatinin">S-Kreatinin<a class="headerlink" href="#s-kreatinin" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Kreatinin</li>
+<li><strong>Label</strong>: S-Kreatinin</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Kreatinin, s-kreatinin, Bl_Kreatinin, bl_kreatinin</li>
+</ul>
+<h3 id="s-kreatinin-within-normal-value">S-Kreatinin within normal value<a class="headerlink" href="#s-kreatinin-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_KreatininNorm</li>
+<li><strong>Label</strong>: S-Kreatinin within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Kreatinin within normal value, s-kreatinin within normal value, Bl_KreatininNorm, bl_kreatininnorm</li>
+</ul>
+<h3 id="gfr">GFR<a class="headerlink" href="#gfr" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_GFR</li>
+<li><strong>Label</strong>: GFR</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: GFR, gfr, Bl_GFR, bl_gfr</li>
+</ul>
+<h3 id="gfr-within-normal-value">GFR within normal value<a class="headerlink" href="#gfr-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_GFRNorm</li>
+<li><strong>Label</strong>: GFR within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: GFR within normal value, gfr within normal value, Bl_GFRNorm, bl_gfrnorm</li>
+</ul>
+<h3 id="s-alat">S-ALAT<a class="headerlink" href="#s-alat" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_ALAT</li>
+<li><strong>Label</strong>: S-ALAT</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-ALAT, s-alat, Bl_ALAT, bl_alat</li>
+</ul>
+<h3 id="s-alat-within-normal-value">S-ALAT within normal value<a class="headerlink" href="#s-alat-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_ALATNorm</li>
+<li><strong>Label</strong>: S-ALAT within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-ALAT within normal value, s-alat within normal value, Bl_ALATNorm, bl_alatnorm</li>
+</ul>
+<h3 id="s-alp">S-ALP<a class="headerlink" href="#s-alp" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_ALP</li>
+<li><strong>Label</strong>: S-ALP</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-ALP, s-alp, Bl_ALP, bl_alp</li>
+</ul>
+<h3 id="s-alp-within-normal-value">S-ALP within normal value<a class="headerlink" href="#s-alp-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_ALPNorm</li>
+<li><strong>Label</strong>: S-ALP within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-ALP within normal value, s-alp within normal value, Bl_ALPNorm, bl_alpnorm</li>
+</ul>
+<h3 id="s-probnp">S-proBNP<a class="headerlink" href="#s-probnp" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_proBNP</li>
+<li><strong>Label</strong>: S-proBNP</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-proBNP, s-probnp, Bl_proBNP, bl_probnp</li>
+</ul>
+<h3 id="s-probnp-within-normal-value">S-proBNP within normal value<a class="headerlink" href="#s-probnp-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_proBNPNorm</li>
+<li><strong>Label</strong>: S-proBNP within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-proBNP within normal value, s-probnp within normal value, Bl_proBNPNorm, bl_probnpnorm</li>
+</ul>
+<h3 id="s-cholesterol-total">S-Cholesterol, total<a class="headerlink" href="#s-cholesterol-total" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TotChol</li>
+<li><strong>Label</strong>: S-Cholesterol, total</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Cholesterol, total, s-cholesterol, total, Bl_TotChol, bl_totchol</li>
+</ul>
+<h3 id="s-cholesterol-total-within-normal-value">S-Cholesterol, total within normal value<a class="headerlink" href="#s-cholesterol-total-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TotCholNorm</li>
+<li><strong>Label</strong>: S-Cholesterol, total within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Cholesterol, total within normal value, s-cholesterol, total within normal value, Bl_TotCholNorm, bl_totcholnorm</li>
+</ul>
+<h3 id="s-hdl">S-HDL<a class="headerlink" href="#s-hdl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HDL</li>
+<li><strong>Label</strong>: S-HDL</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-HDL, s-hdl, Bl_HDL, bl_hdl</li>
+</ul>
+<h3 id="s-hdl-within-normal-value">S-HDL within normal value<a class="headerlink" href="#s-hdl-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_HDLNorm</li>
+<li><strong>Label</strong>: S-HDL within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-HDL within normal value, s-hdl within normal value, Bl_HDLNorm, bl_hdlnorm</li>
+</ul>
+<h3 id="s-triglycerides">S-Triglycerides<a class="headerlink" href="#s-triglycerides" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Triglys</li>
+<li><strong>Label</strong>: S-Triglycerides</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Triglycerides, s-triglycerides, Bl_Triglys, bl_triglys</li>
+</ul>
+<h3 id="s-triglycerides-within-normal-value">S-Triglycerides within normal value<a class="headerlink" href="#s-triglycerides-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TriglysNorm</li>
+<li><strong>Label</strong>: S-Triglycerides within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Triglycerides within normal value, s-triglycerides within normal value, Bl_TriglysNorm, bl_triglysnorm</li>
+</ul>
+<h3 id="s-ldl">S-LDL<a class="headerlink" href="#s-ldl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_LDL</li>
+<li><strong>Label</strong>: S-LDL</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-LDL, s-ldl, Bl_LDL, bl_ldl</li>
+</ul>
+<h3 id="s-ldl-within-normal-value">S-LDL within normal value<a class="headerlink" href="#s-ldl-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_LDLNorm</li>
+<li><strong>Label</strong>: S-LDL within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-LDL within normal value, s-ldl within normal value, Bl_LDLNorm, bl_ldlnorm</li>
+</ul>
+<h3 id="s-albumin">S-Albumin<a class="headerlink" href="#s-albumin" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_Albumin</li>
+<li><strong>Label</strong>: S-Albumin</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Albumin, s-albumin, Bl_Albumin, bl_albumin</li>
+</ul>
+<h3 id="s-albumin-within-normal-value">S-Albumin within normal value<a class="headerlink" href="#s-albumin-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_AlbuminNorm</li>
+<li><strong>Label</strong>: S-Albumin within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Albumin within normal value, s-albumin within normal value, Bl_AlbuminNorm, bl_albuminnorm</li>
+</ul>
+<h3 id="s-ft4">S-fT4<a class="headerlink" href="#s-ft4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_fT4</li>
+<li><strong>Label</strong>: S-fT4</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-fT4, s-ft4, Bl_fT4, bl_ft4</li>
+</ul>
+<h3 id="s-ft4-within-normal-value">S-fT4 within normal value<a class="headerlink" href="#s-ft4-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_fT4Norm</li>
+<li><strong>Label</strong>: S-fT4 within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-fT4 within normal value, s-ft4 within normal value, Bl_fT4Norm, bl_ft4norm</li>
+</ul>
+<h3 id="s-tsh">S-TSH<a class="headerlink" href="#s-tsh" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TSH</li>
+<li><strong>Label</strong>: S-TSH</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-TSH, s-tsh, Bl_TSH, bl_tsh</li>
+</ul>
+<h3 id="s-tsh-within-normal-value">S-TSH within normal value<a class="headerlink" href="#s-tsh-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_TSHNorm</li>
+<li><strong>Label</strong>: S-TSH within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-TSH within normal value, s-tsh within normal value, Bl_TSHNorm, bl_tshnorm</li>
+</ul>
+<h3 id="s-vitamin-d-25-oh-d">S-Vitamin D 25-OH-D<a class="headerlink" href="#s-vitamin-d-25-oh-d" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_VitD</li>
+<li><strong>Label</strong>: S-Vitamin D 25-OH-D</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Vitamin D 25-OH-D, s-vitamin d 25-oh-d, Bl_VitD, bl_vitd</li>
+</ul>
+<h3 id="s-vitamin-d-25-oh-d-within-normal-value">S-Vitamin D 25-OH-D within normal value<a class="headerlink" href="#s-vitamin-d-25-oh-d-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_VitDNorm</li>
+<li><strong>Label</strong>: S-Vitamin D 25-OH-D within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Vitamin D 25-OH-D within normal value, s-vitamin d 25-oh-d within normal value, Bl_VitDNorm, bl_vitdnorm</li>
+</ul>
+<h3 id="s-vitamin-d-125-oh2-d">S-Vitamin D 1,25-OH2-D<a class="headerlink" href="#s-vitamin-d-125-oh2-d" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_VitD1_25</li>
+<li><strong>Label</strong>: S-Vitamin D 1,25-OH2-D</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Vitamin D 1,25-OH2-D, s-vitamin d 1,25-oh2-d, Bl_VitD1_25, bl_vitd1_25</li>
+</ul>
+<h3 id="s-vitamin-d-125-oh2-d-within-normal-value">S-Vitamin D 1,25-OH2-D within normal value<a class="headerlink" href="#s-vitamin-d-125-oh2-d-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_VitD1_25Norm</li>
+<li><strong>Label</strong>: S-Vitamin D 1,25-OH2-D within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: S-Vitamin D 1,25-OH2-D within normal value, s-vitamin d 1,25-oh2-d within normal value, Bl_VitD1_25Norm, bl_vitd1_25norm</li>
+</ul>
+<h3 id="cdt">CDT<a class="headerlink" href="#cdt" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_CDT</li>
+<li><strong>Label</strong>: CDT</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CDT, cdt, Bl_CDT, bl_cdt</li>
+</ul>
+<h3 id="cdt-within-normal-value">CDT within normal value<a class="headerlink" href="#cdt-within-normal-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_CDTNorm</li>
+<li><strong>Label</strong>: CDT within normal value</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: CDT within normal value, cdt within normal value, Bl_CDTNorm, bl_cdtnorm</li>
+</ul>
+<h3 id="b-apoe-genotype">B-ApoE-genotype<a class="headerlink" href="#b-apoe-genotype" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: Bl_ApoE</li>
+<li><strong>Label</strong>: B-ApoE-genotype</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: B-ApoE-genotype, b-apoe-genotype, Bl_ApoE, bl_apoe</li>
+</ul>
+<h3 id="simoa_x_34_plasma_mean">simoa_x_34_plasma_mean<a class="headerlink" href="#simoa_x_34_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_34_plasma_mean</li>
+<li><strong>Label</strong>: simoa_x_34_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_34_plasma_mean, simoa x 34 plasma mean, Simoa X 34 Plasma Mean, SIMOA_X_34_PLASMA_MEAN</li>
+</ul>
+<h3 id="simoa_x_34_plasma_cv">simoa_x_34_plasma_CV<a class="headerlink" href="#simoa_x_34_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_34_plasma_cv</li>
+<li><strong>Label</strong>: simoa_x_34_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_34_plasma_CV, simoa_x_34_plasma_cv, simoa x 34 plasma CV, simoa x 34 plasma cv</li>
+</ul>
+<h3 id="simoa_x_34_plasma_date">simoa_x_34_plasma_date<a class="headerlink" href="#simoa_x_34_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_34_plasma_date</li>
+<li><strong>Label</strong>: simoa_x_34_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_34_plasma_date, simoa x 34 plasma date, Simoa X 34 Plasma Date, SIMOA_X_34_PLASMA_DATE</li>
+</ul>
+<h3 id="simoa_x_34_plasma_plate">simoa_x_34_plasma_plate<a class="headerlink" href="#simoa_x_34_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_34_plasma_plate</li>
+<li><strong>Label</strong>: simoa_x_34_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_34_plasma_plate, simoa x 34 plasma plate, Simoa X 34 Plasma Plate, SIMOA_X_34_PLASMA_PLATE</li>
+</ul>
+<h3 id="simoa_20_x_plasma_mean">simoa_20_x_plasma_mean<a class="headerlink" href="#simoa_20_x_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_20_x_plasma_mean</li>
+<li><strong>Label</strong>: simoa_20_x_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_20_x_plasma_mean, simoa 20 x plasma mean, Simoa 20 X Plasma Mean, SIMOA_20_X_PLASMA_MEAN</li>
+</ul>
+<h3 id="simoa_20_x_plasma_cv">simoa_20_x_plasma_CV<a class="headerlink" href="#simoa_20_x_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_20_x_plasma_cv</li>
+<li><strong>Label</strong>: simoa_20_x_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_20_x_plasma_CV, simoa_20_x_plasma_cv, simoa 20 x plasma CV, simoa 20 x plasma cv</li>
+</ul>
+<h3 id="simoa_20_x_plasma_date">simoa_20_x_plasma_date<a class="headerlink" href="#simoa_20_x_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_20_x_plasma_date</li>
+<li><strong>Label</strong>: simoa_20_x_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_20_x_plasma_date, simoa 20 x plasma date, Simoa 20 X Plasma Date, SIMOA_20_X_PLASMA_DATE</li>
+</ul>
+<h3 id="simoa_20_x_plasma_plate">simoa_20_x_plasma_plate<a class="headerlink" href="#simoa_20_x_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_20_x_plasma_plate</li>
+<li><strong>Label</strong>: simoa_20_x_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_20_x_plasma_plate, simoa 20 x plasma plate, Simoa 20 X Plasma Plate, SIMOA_20_X_PLASMA_PLATE</li>
+</ul>
+<h3 id="simoa_x_40_plasma_mean">simoa_x_40_plasma_mean<a class="headerlink" href="#simoa_x_40_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_40_plasma_mean</li>
+<li><strong>Label</strong>: simoa_x_40_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_40_plasma_mean, simoa x 40 plasma mean, Simoa X 40 Plasma Mean, SIMOA_X_40_PLASMA_MEAN</li>
+</ul>
+<h3 id="simoa_x_40_plasma_cv">simoa_x_40_plasma_CV<a class="headerlink" href="#simoa_x_40_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_40_plasma_cv</li>
+<li><strong>Label</strong>: simoa_x_40_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_40_plasma_CV, simoa_x_40_plasma_cv, simoa x 40 plasma CV, simoa x 40 plasma cv</li>
+</ul>
+<h3 id="simoa_x_40_plasma_date">simoa_x_40_plasma_date<a class="headerlink" href="#simoa_x_40_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_40_plasma_date</li>
+<li><strong>Label</strong>: simoa_x_40_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_40_plasma_date, simoa x 40 plasma date, Simoa X 40 Plasma Date, SIMOA_X_40_PLASMA_DATE</li>
+</ul>
+<h3 id="simoa_x_40_plasma_plate">simoa_x_40_plasma_plate<a class="headerlink" href="#simoa_x_40_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_x_40_plasma_plate</li>
+<li><strong>Label</strong>: simoa_x_40_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_x_40_plasma_plate, simoa x 40 plasma plate, Simoa X 40 Plasma Plate, SIMOA_X_40_PLASMA_PLATE</li>
+</ul>
+<h3 id="simoa_nfl_plasma_mean">simoa_nfl_plasma_mean<a class="headerlink" href="#simoa_nfl_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_nfl_plasma_mean</li>
+<li><strong>Label</strong>: simoa_nfl_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_nfl_plasma_mean, simoa nfl plasma mean, Simoa Nfl Plasma Mean, SIMOA_NFL_PLASMA_MEAN</li>
+</ul>
+<h3 id="simoa_nfl_plasma_cv">simoa_nfl_plasma_CV<a class="headerlink" href="#simoa_nfl_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_nfl_plasma_cv</li>
+<li><strong>Label</strong>: simoa_nfl_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_nfl_plasma_CV, simoa_nfl_plasma_cv, simoa nfl plasma CV, simoa nfl plasma cv</li>
+</ul>
+<h3 id="simoa_nfl_plasma_date">simoa_nfl_plasma_date<a class="headerlink" href="#simoa_nfl_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_nfl_plasma_date</li>
+<li><strong>Label</strong>: simoa_nfl_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_nfl_plasma_date, simoa nfl plasma date, Simoa Nfl Plasma Date, SIMOA_NFL_PLASMA_DATE</li>
+</ul>
+<h3 id="simoa_nfl_plasma_plate">simoa_nfl_plasma_plate<a class="headerlink" href="#simoa_nfl_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_nfl_plasma_plate</li>
+<li><strong>Label</strong>: simoa_nfl_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_nfl_plasma_plate, simoa nfl plasma plate, Simoa Nfl Plasma Plate, SIMOA_NFL_PLASMA_PLATE</li>
+</ul>
+<h3 id="simoa_ptau181_plasma_mean">simoa_pTau181_plasma_mean<a class="headerlink" href="#simoa_ptau181_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_pTau181_plasma_mean</li>
+<li><strong>Label</strong>: simoa_pTau181_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_pTau181_plasma_mean, simoa_ptau181_plasma_mean, simoa pTau181 plasma mean, simoa ptau181 plasma mean</li>
+</ul>
+<h3 id="simoa_ptau181_plasma_cv">simoa_pTau181_plasma_CV<a class="headerlink" href="#simoa_ptau181_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_pTau181_plasma_cv</li>
+<li><strong>Label</strong>: simoa_pTau181_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_pTau181_plasma_CV, simoa_ptau181_plasma_cv, simoa pTau181 plasma CV, simoa ptau181 plasma cv, simoa_pTau181_plasma_cv</li>
+</ul>
+<h3 id="simoa_ptau181_plasma_date">simoa_pTau181_plasma_date<a class="headerlink" href="#simoa_ptau181_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_pTau181_plasma_date</li>
+<li><strong>Label</strong>: simoa_pTau181_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_pTau181_plasma_date, simoa_ptau181_plasma_date, simoa pTau181 plasma date, simoa ptau181 plasma date</li>
+</ul>
+<h3 id="simoa_ptau181_plasma_plate">simoa_pTau181_plasma_plate<a class="headerlink" href="#simoa_ptau181_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: simoa_pTau181_plasma_plate</li>
+<li><strong>Label</strong>: simoa_pTau181_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: simoa_pTau181_plasma_plate, simoa_ptau181_plasma_plate, simoa pTau181 plasma plate, simoa ptau181 plasma plate</li>
+</ul>
+<h3 id="plgf_plasma_mean">PlGF_plasma_mean<a class="headerlink" href="#plgf_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_plasma_mean</li>
+<li><strong>Label</strong>: PlGF_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF_plasma_mean, plgf_plasma_mean, PlGF plasma mean, plgf plasma mean</li>
+</ul>
+<h3 id="plgf_plasma_cv">PlGF_plasma_CV<a class="headerlink" href="#plgf_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_plasma_cv</li>
+<li><strong>Label</strong>: PlGF_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF_plasma_CV, plgf_plasma_cv, PlGF plasma CV, plgf plasma cv, PlGF_plasma_cv</li>
+</ul>
+<h3 id="plgf_plasma_date">PlGF_plasma_date<a class="headerlink" href="#plgf_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_plasma_date</li>
+<li><strong>Label</strong>: PlGF_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF_plasma_date, plgf_plasma_date, PlGF plasma date, plgf plasma date</li>
+</ul>
+<h3 id="plgf_plasma_plate">PlGF_plasma_plate<a class="headerlink" href="#plgf_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: PlGF_plasma_plate</li>
+<li><strong>Label</strong>: PlGF_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: PlGF_plasma_plate, plgf_plasma_plate, PlGF plasma plate, plgf plasma plate</li>
+</ul>
+<h3 id="vegf_c_plasma_mean">VEGF_C_plasma_mean<a class="headerlink" href="#vegf_c_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_plasma_mean</li>
+<li><strong>Label</strong>: VEGF_C_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C_plasma_mean, vegf_c_plasma_mean, VEGF C plasma mean, vegf c plasma mean</li>
+</ul>
+<h3 id="vegf_c_plasma_cv">VEGF_C_plasma_CV<a class="headerlink" href="#vegf_c_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_plasma_cv</li>
+<li><strong>Label</strong>: VEGF_C_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C_plasma_CV, vegf_c_plasma_cv, VEGF C plasma CV, vegf c plasma cv, VEGF_C_plasma_cv</li>
+</ul>
+<h3 id="vegf_c_plasma_date">VEGF_C_plasma_date<a class="headerlink" href="#vegf_c_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_plasma_date</li>
+<li><strong>Label</strong>: VEGF_C_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C_plasma_date, vegf_c_plasma_date, VEGF C plasma date, vegf c plasma date</li>
+</ul>
+<h3 id="vegf_c_plasma_plate">VEGF_C_plasma_plate<a class="headerlink" href="#vegf_c_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_C_plasma_plate</li>
+<li><strong>Label</strong>: VEGF_C_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_C_plasma_plate, vegf_c_plasma_plate, VEGF C plasma plate, vegf c plasma plate</li>
+</ul>
+<h3 id="vegf_a_plasma_mean">VEGF_A_plasma_mean<a class="headerlink" href="#vegf_a_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_plasma_mean</li>
+<li><strong>Label</strong>: VEGF_A_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A_plasma_mean, vegf_a_plasma_mean, VEGF A plasma mean, vegf a plasma mean</li>
+</ul>
+<h3 id="vegf_a_plasma_cv">VEGF_A_plasma_CV<a class="headerlink" href="#vegf_a_plasma_cv" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_plasma_cv</li>
+<li><strong>Label</strong>: VEGF_A_plasma_CV</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A_plasma_CV, vegf_a_plasma_cv, VEGF A plasma CV, vegf a plasma cv, VEGF_A_plasma_cv</li>
+</ul>
+<h3 id="vegf_a_plasma_date">VEGF_A_plasma_date<a class="headerlink" href="#vegf_a_plasma_date" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_plasma_date</li>
+<li><strong>Label</strong>: VEGF_A_plasma_date</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A_plasma_date, vegf_a_plasma_date, VEGF A plasma date, vegf a plasma date</li>
+</ul>
+<h3 id="vegf_a_plasma_plate">VEGF_A_plasma_plate<a class="headerlink" href="#vegf_a_plasma_plate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: VEGF_A_plasma_plate</li>
+<li><strong>Label</strong>: VEGF_A_plasma_plate</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: VEGF_A_plasma_plate, vegf_a_plasma_plate, VEGF A plasma plate, vegf a plasma plate</li>
+</ul>
+<h3 id="ugot_p217_plasma_mean">UGOT_p217_plasma_mean<a class="headerlink" href="#ugot_p217_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p217_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_p217_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p217_plasma_mean, ugot_p217_plasma_mean, UGOT p217 plasma mean, ugot p217 plasma mean</li>
+</ul>
+<h3 id="ugot_nfl_plasma_mean">UGOT_NfL_plasma_mean<a class="headerlink" href="#ugot_nfl_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_NfL_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_NfL_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_NfL_plasma_mean, ugot_nfl_plasma_mean, UGOT NfL plasma mean, ugot nfl plasma mean</li>
+</ul>
+<h3 id="ugot_bd_tau_carboxylated_plasma_mean">UGOT_BD_Tau_carboxylated_plasma_mean<a class="headerlink" href="#ugot_bd_tau_carboxylated_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_BD_Tau_carboxylated_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_BD_Tau_carboxylated_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_BD_Tau_carboxylated_plasma_mean, ugot_bd_tau_carboxylated_plasma_mean, UGOT BD Tau carboxylated plasma mean, ugot bd tau carboxylated plasma mean</li>
+</ul>
+<h3 id="ugot_bd_tau_dyed_plasma_mean">UGOT_BD_Tau_dyed_plasma_mean<a class="headerlink" href="#ugot_bd_tau_dyed_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_BD_Tau_dyed_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_BD_Tau_dyed_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_BD_Tau_dyed_plasma_mean, ugot_bd_tau_dyed_plasma_mean, UGOT BD Tau dyed plasma mean, ugot bd tau dyed plasma mean</li>
+</ul>
+<h3 id="ugot_p181_carboxylated_plasma_mean">UGOT_p181_carboxylated_plasma_mean<a class="headerlink" href="#ugot_p181_carboxylated_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p181_carboxylated_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_p181_carboxylated_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p181_carboxylated_plasma_mean, ugot_p181_carboxylated_plasma_mean, UGOT p181 carboxylated plasma mean, ugot p181 carboxylated plasma mean</li>
+</ul>
+<h3 id="ugot_p181_dyed_plasma_mean">UGOT_p181_dyed_plasma_mean<a class="headerlink" href="#ugot_p181_dyed_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p181_dyed_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_p181_dyed_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p181_dyed_plasma_mean, ugot_p181_dyed_plasma_mean, UGOT p181 dyed plasma mean, ugot p181 dyed plasma mean</li>
+</ul>
+<h3 id="ugot_p231_carboxylated_plasma_mean">UGOT_p231_carboxylated_plasma_mean<a class="headerlink" href="#ugot_p231_carboxylated_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_p231_carboxylated_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_p231_carboxylated_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_p231_carboxylated_plasma_mean, ugot_p231_carboxylated_plasma_mean, UGOT p231 carboxylated plasma mean, ugot p231 carboxylated plasma mean</li>
+</ul>
+<h3 id="ugot_gfap_plasma_mean">UGOT_GFAP_plasma_mean<a class="headerlink" href="#ugot_gfap_plasma_mean" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ID</strong>: UGOT_GFAP_plasma_mean</li>
+<li><strong>Label</strong>: UGOT_GFAP_plasma_mean</li>
+<li><strong>Definition</strong>: TODO: Define semantic meaning.</li>
+<li><strong>Level</strong>: visit</li>
+<li><strong>Allowed values</strong>: -</li>
+<li><strong>Synonyms</strong>: UGOT_GFAP_plasma_mean, ugot_gfap_plasma_mean, UGOT GFAP plasma mean, ugot gfap plasma mean</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

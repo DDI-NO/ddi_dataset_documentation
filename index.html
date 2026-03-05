@@ -12,7 +12,7 @@
       
       
       
-        <link rel="next" href="experiments/_intro/">
+        <link rel="next" href="experiments/">
       
       
         
@@ -194,7 +194,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="experiments/_intro/" class="md-tabs__link">
+        <a href="experiments/" class="md-tabs__link">
           
   
   
@@ -275,6 +275,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -291,6 +309,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brief-project-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brief Project Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -355,34 +403,6 @@
   
   
     <li class="md-nav__item">
-      <a href="experiments/_intro/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="experiments/" class="md-nav__link">
         
   
@@ -390,63 +410,7 @@
   <span class="md-ellipsis">
     
   
-    Index
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="experiments/diag_diagnosis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Diagnosis (example)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="experiments/demographics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Demographics (example)
+    Catalog
   
 
     
@@ -602,6 +566,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brief-project-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brief Project Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -618,9 +601,39 @@
 
 
 <h1 id="ddi-dataset-documentation">DDI Dataset Documentation<a class="headerlink" href="#ddi-dataset-documentation" title="Permanent link">&para;</a></h1>
-<p>This site documents the datasets and variables available in the Dementia Disease Initiative (DDI) project. The documentation is generated from the base schemas and associated metadata from the XNAT data model, combined with hand-authored content for enriched descriptions and context.</p>
-<p>Use the navigation to explore project, experiment-level scopes, and the
-flat dataset variable catalogue.</p>
+<p>This site documents the dataset and variables available in the Dementia Disease Initiative (DDI) database exports. </p>
+<p>The documentation follows the same logic as the data collection and organization in the DDI project, which is structured around several several categories of data modalities and biological domains, including:</p>
+<ul>
+<li>Clinical data<ul>
+<li><a href="experiments/demographics/">Demographics</a></li>
+<li><a href="experiments/medhist/">Medical history</a></li>
+<li><a href="experiments/cognitive_screening/">Cognitive assessments</a></li>
+<li><a href="experiments/physical_exam/">Physical examinations</a></li>
+<li><a href="experiments/diag_diagnosis/">Cognitive staging and diagnosis</a></li>
+</ul>
+</li>
+<li>Fluid biomarkers<ul>
+<li><a href="experiments/blood_biomarkers/">Blood samples</a></li>
+<li><a href="experiments/csf_biomarkers/">Cerebrospinal fluid (CSF) samples</a></li>
+</ul>
+</li>
+<li>Neuroimaging-derived biomarkers (documentation in progress)<ul>
+<li>Brain volumes</li>
+<li>Cortical thickness</li>
+</ul>
+</li>
+<li>Genetic data<ul>
+<li>APOE Genotyping (included in blood biomarker data)</li>
+<li>Polygenic Risk Scores (Not available in default dataset export)</li>
+<li>Genome-Wide Association Studies (Not available in default dataset export)</li>
+</ul>
+</li>
+</ul>
+<p>You can navigate through the experiments or the full flat dataset. The experiments are organized by data modality and biological domain, to explore the specific variables collected in each category. Each experiment page provides detailed information about the variables, including their definitions, data types, and any relevant metadata. The full flat dataset view provides a comprehensive catalogue of all variables available in the dataset, allowing for easy reference and exploration of the entire dataset.  </p>
+<p>The search functionality allows you to quickly find specific variables or topics across the entire documentation, making it easier to navigate and access the information you need.</p>
+<h2 id="brief-project-description">Brief Project Description<a class="headerlink" href="#brief-project-description" title="Permanent link">&para;</a></h2>
+<p>The Dementia Disease Initiation project is a Norwegian longitudinal multicenter research initiative focused on understanding the early stages and progression to dementia. The project collects a wide range of data, including clinical assessments, cognitive testing, neuroimaging, biomarkers, genetic information, and lifestyle factors, to identify biomarkers and risk factors associated with the onset of dementia. Data collection follows a well-defined follow-up protocol, with participants undergoing two-year follow-up assessments up to ten years or until the onset of dementia. </p>
+<p>At each research visit, clinical data is collected using a standardized case report form (CRF), neuroimaging data is acquired using a standardized MRI protocol, and blood and CSF biospecimens are drawn for biomarker and genetic analyses. The collected data is recorded in a secured customized XNAT instance, which serves as the central repository and database for all project data.</p>
 
 
 
