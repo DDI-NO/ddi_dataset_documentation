@@ -14,6 +14,8 @@ The documentation follows the same logic as the data collection and organization
     - [Blood samples](experiments/blood_biomarkers.md)
     - [Cerebrospinal fluid (CSF) samples](experiments/csf_biomarkers.md)
 - Neuroimaging-derived biomarkers (documentation in progress)
+    - MRI radiology read
+    - PET radiology read
     - Brain volumes
     - Cortical thickness
 - Genetic data

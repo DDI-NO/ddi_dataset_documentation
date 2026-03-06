@@ -1,0 +1,3 @@
+# MRI report
+
+<!-- AUTO:VARIABLES -->

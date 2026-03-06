@@ -9,3 +9,5 @@
 | Diagnosis/Staging | CRF Part IV: Includes Diagnosis staging and etiology | [Diagnosis/Staging](diag_diagnosis.md) |
 | Blood Biomarkers | Blood Biochemistry data | [Blood Biomarkers](blood_biomarkers.md) |
 | CSF Biomarkers | CSF Biochemistry data | [CSF Biomarkers](csf_biomarkers.md) |
+| Amyloid PET report | Amyloid-PET report | [Amyloid PET report](amyloid_pet.md) |
+| MRI Report | MRI report | [MRI Report](mri_report.md) |

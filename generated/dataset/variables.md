@@ -901,6 +901,25 @@
 | atn | ATN | TODO: Define semantic meaning. | visit | categorical |
 | atn_amypet | ATN_amypet | TODO: Define semantic meaning. | visit | categorical |
 | atn_inno | ATN Innotest | TODO: Define semantic meaning. | visit | categorical |
+| DATE | Date | TODO: Define semantic meaning. | visit | date |
+| AGE | Age | TODO: Define semantic meaning. | visit | numeric |
+| AMYPET_TRACER | Tracer | TODO: Define semantic meaning. | visit | text |
+| AMYPET_TRACER_OTHER | Tracer Other | TODO: Define semantic meaning. | visit | text |
+| AMYPET_PREV_DATE | Previous Date | TODO: Define semantic meaning. | visit | date |
+| AMYPET_CONCLU | Conclusion | TODO: Define semantic meaning. | visit | text |
+| DATE | Date | TODO: Define semantic meaning. | visit | date |
+| AGE | Age | TODO: Define semantic meaning. | visit | numeric |
+| MRI_DATE | Session Date | TODO: Define semantic meaning. | visit | date |
+| MRI_READER | Reader | TODO: Define semantic meaning. | visit | text |
+| MRI_TECH | Technique | TODO: Define semantic meaning. | visit | text |
+| MRI_PREV_DATE | Date of previous MRI | TODO: Define semantic meaning. | visit | date |
+| MRI_CONCLU | Conclusion | TODO: Define semantic meaning. | visit | text |
+| MRI_FAZEKAS | Fazekas | TODO: Define semantic meaning. | visit | text |
+| MRI_GLOB_CEREB_ATRO | Global cerebral atrophy | TODO: Define semantic meaning. | visit | text |
+| MRI_MTA_RIGHT | Medial temporal atrophy - Right | TODO: Define semantic meaning. | visit | text |
+| MRI_MTA_LEFT | Medial temporal atrophy - Left | TODO: Define semantic meaning. | visit | text |
+| MRI_STATUS | Status | TODO: Define semantic meaning. | visit | text |
+| koedam_pa_score | Status | TODO: Define semantic meaning. | visit | numeric |
 | baseline_date | baseline_date | Earliest available visit date for the subject across diagnosis records. | subject | computed |
 | last_stag | last_stag | Most recent clinical staging code for the subject. | subject | computed |
 | progression | progression | Derived progression indicator based on baseline and last staging values. | subject | computed |
@@ -8097,6 +8116,158 @@
 - **Level**: visit
 - **Allowed values**: +, u, -
 - **Synonyms**: ATN Innotest, atn innotest, atn_inno
+## Date
+
+- **ID**: DATE
+- **Label**: Date
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Date, date, DATE
+## Age
+
+- **ID**: AGE
+- **Label**: Age
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Age, age, AGE
+## Tracer
+
+- **ID**: AMYPET_TRACER
+- **Label**: Tracer
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Tracer, tracer, AMYPET_TRACER, amypet_tracer
+## Tracer Other
+
+- **ID**: AMYPET_TRACER_OTHER
+- **Label**: Tracer Other
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Tracer Other, tracer other, AMYPET_TRACER_OTHER, amypet_tracer_other
+## Previous Date
+
+- **ID**: AMYPET_PREV_DATE
+- **Label**: Previous Date
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Previous Date, previous date, AMYPET_PREV_DATE, amypet_prev_date
+## Conclusion
+
+- **ID**: AMYPET_CONCLU
+- **Label**: Conclusion
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Conclusion, conclusion, AMYPET_CONCLU, amypet_conclu
+## Date
+
+- **ID**: DATE
+- **Label**: Date
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Date, date, DATE
+## Age
+
+- **ID**: AGE
+- **Label**: Age
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Age, age, AGE
+## Session Date
+
+- **ID**: MRI_DATE
+- **Label**: Session Date
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Session Date, session date, MRI_DATE, mri_date
+## Reader
+
+- **ID**: MRI_READER
+- **Label**: Reader
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Reader, reader, MRI_READER, mri_reader
+## Technique
+
+- **ID**: MRI_TECH
+- **Label**: Technique
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Technique, technique, MRI_TECH, mri_tech
+## Date of previous MRI
+
+- **ID**: MRI_PREV_DATE
+- **Label**: Date of previous MRI
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Date of previous MRI, date of previous mri, MRI_PREV_DATE, mri_prev_date
+## Conclusion
+
+- **ID**: MRI_CONCLU
+- **Label**: Conclusion
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Conclusion, conclusion, MRI_CONCLU, mri_conclu
+## Fazekas
+
+- **ID**: MRI_FAZEKAS
+- **Label**: Fazekas
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Fazekas, fazekas, MRI_FAZEKAS, mri_fazekas
+## Global cerebral atrophy
+
+- **ID**: MRI_GLOB_CEREB_ATRO
+- **Label**: Global cerebral atrophy
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Global cerebral atrophy, global cerebral atrophy, MRI_GLOB_CEREB_ATRO, mri_glob_cereb_atro
+## Medial temporal atrophy - Right
+
+- **ID**: MRI_MTA_RIGHT
+- **Label**: Medial temporal atrophy - Right
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Medial temporal atrophy - Right, medial temporal atrophy - right, MRI_MTA_RIGHT, mri_mta_right
+## Medial temporal atrophy - Left
+
+- **ID**: MRI_MTA_LEFT
+- **Label**: Medial temporal atrophy - Left
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Medial temporal atrophy - Left, medial temporal atrophy - left, MRI_MTA_LEFT, mri_mta_left
+## Status
+
+- **ID**: MRI_STATUS
+- **Label**: Status
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Status, status, MRI_STATUS, mri_status
+## Status
+
+- **ID**: koedam_pa_score
+- **Label**: Status
+- **Definition**: TODO: Define semantic meaning.
+- **Level**: visit
+- **Allowed values**: -
+- **Synonyms**: Status, status, koedam_pa_score
 ## baseline_date
 
 - **ID**: baseline_date

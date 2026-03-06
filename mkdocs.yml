@@ -1,5 +1,5 @@
 site_name: "DDI Dataset Documentation"
-site_description: "Generated documentation for DDI datasets"
+site_description: "Documentation of available data and variables in the DDI dataset"
 repo_url: ""
 
 # The docs/ directory is assembled by the build command.

@@ -45,6 +45,18 @@ experiments:
     sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/csf/display/csf_CSFData_display.meta.yaml"
     page_slug: "csf_biomarkers"
     scope_md: "content/experiments/csf_CSFData.md"
+  amypet_AmyloidPETReportData:
+    enabled: true
+    display_name: "Amyloid PET report"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/amypet/display/amypet_AmyloidPETReportData_display.meta.yaml"
+    page_slug: "amyloid_pet"
+    scope_md: "content/experiments/amypet_AmyloidPETReportData.md"
+  mrrep_MRIReportData:
+    enabled: true
+    display_name: "MRI Report"
+    sidecar_path: "../xnat-plugins/xnat-apgem-plugin/src/main/resources/schemas/mrrep/display/mrrep_MRIReportData_display.meta.yaml"
+    page_slug: "mri_report"
+    scope_md: "content/experiments/mrrep_MRIReportData.md"
 
 flat_dataset:
   include_experiments:
