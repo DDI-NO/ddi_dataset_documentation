@@ -19,6 +19,7 @@ fi
 
 # Remove everything in gh-pages branch root
 git rm -r --ignore-unmatch .
+git clean -fdx
 
 # Copy built site to branch root
 cp -R "$SITE_DIR"/. .
